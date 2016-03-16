@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>One of A Kind</title>
     <meta name="description" content="@yield('meta-description')">
-     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="/css/style.css"> -->
 </head>
     <body>
