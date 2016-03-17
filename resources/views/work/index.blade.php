@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Work</title>
-</head>
-<body>
-<h1>Our Work</h1>
+@extends('master')
 
-</body>
-</html>
+@section('title', 'Home')
+@section('meta-description','One of a Kind work gallery')
+
+@section('content')
+<div class="container">
+<h1>Our Work</h1>
+</div>
+@endsection

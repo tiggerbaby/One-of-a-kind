@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Shop</title>
-</head>
-<body>
-<h1>Shopping</h1>
-</body>
-</html>
+@extends('master')
+
+@section('title', 'Home')
+@section('meta-description','One of a Kind Online Shop')
+
+@section('content')
+<div class="container">
+<h1>Shop</h1>
+</div>
+@endsection
