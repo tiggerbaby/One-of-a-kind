@@ -1,6 +1,7 @@
-#logo {
-  height: 100px;
-  width: 100px; }
+#logo{
+	height: 100px;
+	width: 100px;
+}
 
 .navbar {
   background-color: white;
@@ -11,31 +12,40 @@
   width: auto;
   border-bottom: none;
   margin-bottom: 0px;
-  padding: 20px 0px; }
-
+  padding: 20px 0px;
+}
 .navbar-brand {
   padding: 0 15px;
-  height: 96px;
-  margin-left: 30%; }
+  height: 96px; 
+  margin-left:30%;
+}
+
+
 
 @media (min-width: 768px) {
   .navbar-nav {
     position: relative;
-    right: -50%; }
-
+    right: -50%;
+  }
   .navbar-nav > li {
     position: relative;
-    left: -50%; }
-
+    left: -50%;
+  }
   .navbar-nav > li a {
     line-height: 126px;
     vertical-align: middle;
-    padding: 0 24px; } }
+    padding: 0 24px;
+  } 
+}
+
 @media (min-width: 992px) {
   .navbar-nav > li a {
-    padding: 0 48px; } }
+    padding: 0 48px;
+  } 
+}
+
 @media (min-width: 1200px) {
   .navbar-nav > li a {
-    padding: 0 68px; } }
-
-/*# sourceMappingURL=style.css.map */
+    padding: 0 68px;
+  } 
+}  
