@@ -1,6 +1,9 @@
-#logo {
+.logo {
   height: 100px;
   width: 100px; }
+
+/*.upperlogo {
+  margin-top: -60px; }*/
 
 .navbar {
   background-color: white;
@@ -16,7 +19,11 @@
 .navbar-brand {
   padding: 0 15px;
   height: 96px;
-  margin-left: 30%; }
+  margin-left: 33.33%; }
+
+.navbar-header button {
+  color: white;
+  border: none; }
 
 @media (min-width: 768px) {
   .navbar-nav {

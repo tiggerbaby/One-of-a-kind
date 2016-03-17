@@ -29,13 +29,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="/"><img src="/img/Current Logo.png" alt="One of A kind logo" id="logo"></a>
+            <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="/"><img src="/img/Current Logo.png" alt="One of A kind logo" class="logo"></a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/story">Our Story</a></li>
                 <li><a href="/work">Our Work</a></li>
-                <li class="hidden-xs"><a href="/"><img src="/img/Current Logo.png" alt="One of A kind logo" id="logo"></a></li>
+                <li class="hidden-xs"><a href="/"><img src="/img/Current Logo.png" alt="One of A kind logo" class="logo upperlogo"></a></li>
                 <li><a href="/shop">Shop Online</a></li>
                 <li><a href="/contact">Contact Us</a></li>
             </ul>
