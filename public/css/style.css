@@ -3,14 +3,14 @@
   width: 100px; }
 
 .upperlogo {
-  margin-top: -60px; }
+  margin-top: -30px; }
 
 .navbar {
   background-color: white;
   min-height: auto;
   position: relative;
   top: 0px;
-  font: 16px Helvetica Neue;
+  font: 14px Helvetica Neue;
   width: auto;
   border-bottom: none;
   margin-bottom: 0px;
@@ -24,6 +24,12 @@
 .navbar-header button {
   color: white;
   border: none; }
+
+.navbar-default .navbar-nav > li > a {
+  color: black; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #777; }
 
 .imgScale img {
   -webkit-transition: all 3s ease;
@@ -56,8 +62,7 @@
   .navbar-nav > li a {
     line-height: 126px;
     vertical-align: middle;
-    padding: 0 24px;
-    /*color: $fontColor;*/ } }
+    padding: 0 24px; } }
 @media (min-width: 992px) {
   .navbar-nav > li a {
     padding: 0 48px; } }

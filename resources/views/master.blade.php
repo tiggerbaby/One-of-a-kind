@@ -22,7 +22,7 @@
     <body>
    <nav class="navbar navbar-default" style="padding-bottom: 0px">
     <div class="container-fluid">
-        <div class="navbar-header">
+        <div class="navbar-header" data-spy="affix-top" data-offset-top="60" data-offset-bottom="200">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
