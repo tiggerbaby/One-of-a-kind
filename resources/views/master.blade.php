@@ -33,12 +33,17 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
+                <!-- <li><a href="/">Home</a></li> -->
                 <li><a href="/story">Our Story</a></li>
                 <li><a href="/work">Our Work</a></li>
                 <li class="hidden-xs"><a href="/"><img src="/img/Current Logo.png" alt="One of A kind logo" class="logo upperlogo"></a></li>
                 <li><a href="/shop">Shop Online</a></li>
                 <li><a href="/contact">Contact Us</a></li>
             </ul>
+        <!--   <ol class="breadcrumb">
+               <li><a href="#">Register</a></li>
+              <li><a href="#">Login</a></li>
+        </ol> -->
         </div>
     </div>
 </nav>
@@ -53,5 +58,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
+    <script src="/js/main.js"></script>
     </body>
 </html>
