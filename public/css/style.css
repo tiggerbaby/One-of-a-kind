@@ -10,7 +10,7 @@
   min-height: auto;
   position: relative;
   top: 0px;
-  font-size: 13px;
+  font: 16px Helvetica Neue;
   width: auto;
   border-bottom: none;
   margin-bottom: 0px;
@@ -24,6 +24,25 @@
 .navbar-header button {
   color: white;
   border: none; }
+
+.imgScale img {
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
+  vertical-align: middle; }
+
+.imgScale img:hover {
+  transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  /* IE 9 */
+  -moz-transform: scale(1.05);
+  /* Firefox */
+  -webkit-transform: scale(1.05);
+  /* Safari and Chrome */
+  -o-transform: scale(1.05);
+  /* Opera */ }
 
 @media (min-width: 768px) {
   .navbar-nav {
@@ -44,6 +63,6 @@
     padding: 0 48px; } }
 @media (min-width: 1200px) {
   .navbar-nav > li a {
-    padding: 0 68px; } }
+    padding: 0 30px; } }
 
 /*# sourceMappingURL=style.css.map */
