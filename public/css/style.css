@@ -5,12 +5,20 @@
 .upperlogo {
   margin-top: -30px; }
 
+.affix {
+  top: 0;
+  width: 100%; }
+
+/*  .affix{
+      padding-top: 100px;
+  }*/
 .navbar {
   background-color: white;
   min-height: auto;
   position: relative;
   top: 0px;
   font: 14px Helvetica Neue;
+  letter-spacing: 2px;
   width: auto;
   border-bottom: none;
   margin-bottom: 0px;

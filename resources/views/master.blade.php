@@ -20,7 +20,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <body>
-   <nav class="navbar navbar-default" style="padding-bottom: 0px">
+   <nav class="navbar navbar-default affix-top" style="padding-bottom: 0px" data-spy="affix" data-offset-top="197">
     <div class="container-fluid">
         <div class="navbar-header" data-spy="affix-top" data-offset-top="60" data-offset-bottom="200">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
