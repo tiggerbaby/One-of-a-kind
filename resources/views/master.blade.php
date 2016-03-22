@@ -34,13 +34,20 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <!-- <li><a href="/">Home</a></li> -->
-                <li><a href="/story">Our Story</a></li>
-                <li><a href="/work">Our Work</a></li>
+                <li><a href="/story">Story</a></li>
+                <li><a href="/work">Work</a></li>
+                 <li><a href="/contact">Contact </a></li>
                 <li class="hidden-xs"><a href="/"><img src="/img/Current Logo.png" alt="One of A kind logo" class="logo upperlogo"></a></li>
-                <li><a href="/shop">Shop Online</a></li>
-                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="#">Register</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+</a></li>
+               
+
+
             </ul>
-        <!--   <ol class="breadcrumb">
+         <!--  <ol class="breadcrumb">
                <li><a href="#">Register</a></li>
               <li><a href="#">Login</a></li>
         </ol> -->

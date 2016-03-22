@@ -1,5 +1,4 @@
-$navFont: 14px Helvetica Neue;
-$fontColor: black;
+@import 'nav';
 
 .logo{
 	height: 100px;
@@ -13,55 +12,11 @@ $fontColor: black;
       width: 100%;
   }
 
+
 /*  .affix{
       padding-top: 100px;
   }*/
-.navbar {
-  background-color: white;
-  min-height: auto;
-  position: relative;
-  top: 0px;
-  font: $navFont;
-  letter-spacing: 2px;
-  width: auto;
-  border-bottom: none;
-  margin-bottom: 0px;
-  padding: 20px 0px;
-}
-.navbar-brand {
-  padding: 0 15px;
-  height: 96px; 
-  margin-left: 33.33%;
-}
-.navbar-header button{
-  color:white;
-  border:none;
-}
 
-.navbar-default .navbar-nav>li>a{
-  color: $fontColor;
-}
-
-.navbar-default .navbar-nav>li>a:hover{
-  color:#777;
-}
-
-.imgScale img {
-  -webkit-transition: all 3s ease;
-    -moz-transition: all 3s ease;
-    -ms-transition: all 3s ease;
-    -o-transition: all 3s ease;
-    transition: all 3s ease;
-    vertical-align: middle;
-}
-
-.imgScale img:hover {
-  transform:scale(1.05);
-    -ms-transform:scale(1.05); /* IE 9 */
-    -moz-transform:scale(1.05); /* Firefox */
-    -webkit-transform:scale(1.05); /* Safari and Chrome */
-    -o-transform:scale(1.05); /* Opera */
-}
 
 @media (min-width: 768px) {
   .navbar-nav {
@@ -77,10 +32,14 @@ $fontColor: black;
     vertical-align: middle;
     padding: 0 24px;
   } 
+  .navbar-collapse{
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 @media (min-width: 992px) {
   .navbar-nav > li a {
-    padding: 0 48px;
+    /*padding: 0 48px;*/
   } 
 }
 @media (min-width: 1200px) {
