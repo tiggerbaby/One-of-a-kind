@@ -1,0 +1,40 @@
+$navFont: 14px Helvetica Neue;
+$fontColor: black;
+
+.logo{
+  height: 100px;
+  width: 100px;
+}
+.upperlogo{
+  margin-top : -40px;
+}
+.navbar {
+  background-color: white;
+  min-height: auto;
+  position: relative;
+  top: 0px;
+  font-family: $navFont;
+  letter-spacing: 2px;
+  width: auto;
+  border-bottom: none;
+  margin-bottom: 0px;
+  padding: 20px 0px;
+}
+.navbar-brand {
+  padding: 0 15px;
+  height: 126px; 
+  margin-left: 33.33%;
+}
+.navbar-header button{
+  color:white;
+  border:none;
+}
+
+.navbar-default .navbar-nav>li>a{
+  color: $fontColor;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  color:#777;
+}
+
