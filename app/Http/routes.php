@@ -10,22 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::get('/', 'HomeController@index');
-// Authentication routes...
-Route::get('login', 'Auth\AuthController@getLogin')->middleware('web');;
-Route::post('login', 'Auth\AuthController@postLogin')->middleware('web');;
-Route::get('logout', 'Auth\AuthController@getLogout')->middleware('web');;
- 
-// Registration routes...
-Route::get('register', 'Auth\AuthController@getRegister')->middleware('web');;
-Route::post('register', 'Auth\AuthController@postRegister')->middleware('web');;
- 
 
-Route::get('story','StoryController@index');
-
-Route::get('work','WorkController@index');
-Route::get('shop','ShopController@index');
-Route::get('contact','ContactController@index');
 
 /*
 |--------------------------------------------------------------------------
@@ -38,12 +23,24 @@ Route::get('contact','ContactController@index');
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
-});
 
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
-    Route::get('/home', 'HomeController@index');
+    Route::get('/', 'HomeController@index');
+// Authentication routes...
+Route::get('login', 'Auth\AuthController@getLogin');
+Route::post('login', 'Auth\AuthController@postLogin');
+Route::get('logout', 'Auth\AuthController@getLogout');
+ 
+// Registration routes...
+Route::get('register', 'Auth\AuthController@getRegister');
+Route::post('register', 'Auth\AuthController@postRegister');
+ 
+
+Route::get('story','StoryController@index');
+
+Route::get('work','WorkController@index');
+Route::get('shop','ShopController@index');
+Route::get('contact','ContactController@index');
 });
