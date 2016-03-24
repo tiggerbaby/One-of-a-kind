@@ -11,6 +11,15 @@
 |
 */
 Route::get('/', 'HomeController@index');
+// Authentication routes...
+Route::get('login', 'Auth\AuthController@getLogin')->middleware('web');;
+Route::post('login', 'Auth\AuthController@postLogin')->middleware('web');;
+Route::get('logout', 'Auth\AuthController@getLogout')->middleware('web');;
+ 
+// Registration routes...
+Route::get('register', 'Auth\AuthController@getRegister')->middleware('web');;
+Route::post('register', 'Auth\AuthController@postRegister')->middleware('web');;
+ 
 
 Route::get('story','StoryController@index');
 
@@ -31,4 +40,10 @@ Route::get('contact','ContactController@index');
 
 Route::group(['middleware' => ['web']], function () {
     //
+});
+
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('/home', 'HomeController@index');
 });

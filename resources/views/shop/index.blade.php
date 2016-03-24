@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title', 'Home')
+@section('title', 'Shop')
 @section('meta-description','One of a Kind Online Shop')
 
 @section('content')

@@ -20,7 +20,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <body>
-   <nav class="navbar navbar-default affix-top" style="padding-bottom: 0px" data-spy="affix" data-offset-top="197">
+   <nav class="navbar navbar-default" style="padding-bottom: 0px">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -39,8 +39,8 @@
                  <li><a href="/contact">Contact </a></li>
                 <li class="hidden-xs"><a href="/"><img src="/img/OOAKlogodraft.jpg" alt="One of A kind logo" class="logo upperlogo"></a></li>
                 <li><a href="/shop">Shop</a></li>
-                <li><a href="#">Register</a></li>
-              <li><a href="#">Login</a></li>
+                <li><a href="/register">Register</a></li>
+              <li><a href="/login">Login</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
                
 
