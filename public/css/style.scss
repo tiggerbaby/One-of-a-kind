@@ -1,11 +1,30 @@
 @import 'master';
 
+
+
 #backgroundImg{
   background-image: url(../img/Brushes.png);
   background-size: cover;
   height: 550px;
 }
 
+.navbar-collapse, .navbar-default .navbar-form {
+    border-bottom: 1px solid #eaeaeb;
+  }
+
+.formwidth{
+  max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.container{
+  label{
+    font-family: $navFont;
+  letter-spacing: 2px;
+  }
+}
 
 @media (min-width: 768px) {
   .navbar-nav {
