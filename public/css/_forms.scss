@@ -20,9 +20,10 @@
   .submit-button{
      background-color: $gold;
      color: #fff;
-     border-color: #gold;
+     border-color: $gold;
+     &:hover{
+       background-color: $hover;
+       border-color:$hover;
+     }
   }
-  .submit-button:hover{
-    background-color: $hover;
-  }
-}
+}  

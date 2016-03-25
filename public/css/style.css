@@ -30,7 +30,7 @@
   color: black; }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #777; }
+  color: #a4854d; }
 
 .navbar-collapse, .navbar-default .navbar-form {
   border-bottom: 1px solid #eaeaeb; }
@@ -53,29 +53,39 @@
 .container .submit-button {
   background-color: #a4854d;
   color: #fff;
-  border-color: #gold; }
-.container .submit-button:hover {
-  background-color: #ceb98b; }
+  border-color: #a4854d; }
+  .container .submit-button:hover {
+    background-color: #ceb98b;
+    border-color: #ceb98b; }
 
 #backgroundImg {
+  font-family: Courier;
+  letter-spacing: 1px;
+  will-change: transform, filter;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  transition: transform 16s cubic-bezier(0.215, 0.61, 0.355, 1), filter 1s ease-out 1s, -webkit-filter 1s ease-out 1s;
+  overflow: hidden;
   background-image: url(../img/Brushes.png);
   background-size: cover;
-  height: 550px; }
+  height: 550px;
+  color: white; }
+  #backgroundImg:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08); }
 
 @media (min-width: 768px) {
   .navbar-nav {
     position: relative;
     right: -45%;
     margin-left: 3%; }
-
-  .navbar-nav > li {
-    position: relative;
-    left: -50%; }
-
-  .navbar-nav > li a {
-    line-height: 105px;
-    vertical-align: middle;
-    /*padding: 0 24px;*/ }
+    .navbar-nav li {
+      position: relative;
+      left: -50%; }
+      .navbar-nav li a {
+        line-height: 105px;
+        vertical-align: middle; }
 
   .navbar-collapse {
     padding-left: 0;
@@ -83,9 +93,6 @@
 
   #backgroundImg {
     min-width: calc(100% + 40px); } }
-@media (min-width: 768px) and (min-width: 992px) {
-  .navbar-nav > li a {
-    /*padding: 0 48px;*/ } }
 @media (min-width: 768px) and (min-width: 1200px) {
   .navbar-nav > li a {
     padding: 0 30px; } }

@@ -9,33 +9,58 @@ $hover: #ceb98b;
   letter-spacing: 2px;
 }
 
+@mixin courierFont{
+  font-family: Courier;
+  letter-spacing: 1px;
+}
+
+@mixin zoomIn{
+  will-change: transform, filter;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transition: transform 16s cubic-bezier(0.215, 0.61, 0.355, 1),filter 1s ease-out 1s,-webkit-filter 1s ease-out 1s;
+}
+
+@mixin zomminHover{
+ -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
 @import 'navBar';
 @import 'forms';
 
 
 
-
 #backgroundImg{
+  @include courierFont;
+  @include zoomIn;
+   overflow: hidden;
   background-image: url(../img/Brushes.png);
   background-size: cover;
-  height: 550px;
+  height: 550px; 
+  color: white;  
+  &:hover{
+  @include zomminHover;
+  }
 }
+
+
 
 @media (min-width: 768px) {
   .navbar-nav {
     position: relative;
     right: -45%;
     margin-left: 3%;
-  }
-  .navbar-nav > li {
+     li {
     position: relative;
     left: -50%;
-  }
-  .navbar-nav > li a {
-    line-height: 105px;
-    vertical-align: middle;
-    /*padding: 0 24px;*/
+         a {
+        line-height: 105px;
+        vertical-align: middle;
+    } 
   } 
+}
   .navbar-collapse{
     padding-left: 0;
     padding-right: 0;
@@ -46,7 +71,6 @@ $hover: #ceb98b;
 
 @media (min-width: 992px) {
   .navbar-nav > li a {
-    /*padding: 0 48px;*/
   } 
 }
 @media (min-width: 1200px) {
