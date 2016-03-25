@@ -1,0 +1,24 @@
+
+.formwidth{
+  max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.container{
+  label{
+  font-family: $navFont;
+  font-weight: normal;
+  letter-spacing: 2px;
+  }
+  .form-control{
+   border-radius: 0px;
+  }
+  .submit-button{
+     background-color: $gold;
+     color: #fff;
+     border-color: #b67c5a;
+     padding-top: 100px;
+  }
+}

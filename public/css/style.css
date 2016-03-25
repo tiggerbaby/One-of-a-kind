@@ -32,11 +32,6 @@
 .navbar-default .navbar-nav > li > a:hover {
   color: #777; }
 
-#backgroundImg {
-  background-image: url(../img/Brushes.png);
-  background-size: cover;
-  height: 550px; }
-
 .navbar-collapse, .navbar-default .navbar-form {
   border-bottom: 1px solid #eaeaeb; }
 
@@ -48,7 +43,20 @@
 
 .container label {
   font-family: 14px Helvetica Neue;
+  font-weight: normal;
   letter-spacing: 2px; }
+.container .form-control {
+  border-radius: 0px; }
+.container .submit-button {
+  background-color: #a4854d;
+  color: #fff;
+  border-color: #b67c5a;
+  padding-top: 100px; }
+
+#backgroundImg {
+  background-image: url(../img/Brushes.png);
+  background-size: cover;
+  height: 550px; }
 
 @media (min-width: 768px) {
   .navbar-nav {
@@ -61,7 +69,7 @@
     left: -50%; }
 
   .navbar-nav > li a {
-    line-height: 126px;
+    line-height: 105px;
     vertical-align: middle;
     /*padding: 0 24px;*/ }
 

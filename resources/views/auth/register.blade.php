@@ -61,9 +61,8 @@
                         </div>
 
                         <div class="form-group">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-btn fa-user"></i>Register
-                                </button>
+                            <input class="form-control submit-button" type="submit">                   
+                            </input>
                         </div>
                     </form>
                 </div>

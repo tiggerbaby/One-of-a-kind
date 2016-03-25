@@ -1,4 +1,9 @@
-@import 'master';
+$navFont: 14px Helvetica Neue;
+$fontColor: black;
+$gold: #a4854d;
+
+@import 'navBar';
+@import 'forms';
 
 
 
@@ -6,24 +11,6 @@
   background-image: url(../img/Brushes.png);
   background-size: cover;
   height: 550px;
-}
-
-.navbar-collapse, .navbar-default .navbar-form {
-    border-bottom: 1px solid #eaeaeb;
-  }
-
-.formwidth{
-  max-width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
-
-.container{
-  label{
-    font-family: $navFont;
-  letter-spacing: 2px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -37,7 +24,7 @@
     left: -50%;
   }
   .navbar-nav > li a {
-    line-height: 126px;
+    line-height: 105px;
     vertical-align: middle;
     /*padding: 0 24px;*/
   } 
