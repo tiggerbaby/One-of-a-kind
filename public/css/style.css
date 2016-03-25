@@ -42,16 +42,20 @@
   text-align: left; }
 
 .container label {
-  font-family: 14px Helvetica Neue;
-  font-weight: normal;
+  font-family: Helvetica Neue;
+  letter-spacing: 2px;
+  font-weight: normal; }
+.container h3 {
+  font-family: Helvetica Neue;
   letter-spacing: 2px; }
 .container .form-control {
   border-radius: 0px; }
 .container .submit-button {
   background-color: #a4854d;
   color: #fff;
-  border-color: #b67c5a;
-  padding-top: 100px; }
+  border-color: #gold; }
+.container .submit-button:hover {
+  background-color: #ceb98b; }
 
 #backgroundImg {
   background-image: url(../img/Brushes.png);

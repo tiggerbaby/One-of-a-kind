@@ -1,9 +1,17 @@
+$font: Helvetica Neue;
 $navFont: 14px Helvetica Neue;
 $fontColor: black;
 $gold: #a4854d;
+$hover: #ceb98b;
+
+@mixin fontstyle{
+  font-family: Helvetica Neue;
+  letter-spacing: 2px;
+}
 
 @import 'navBar';
 @import 'forms';
+
 
 
 

@@ -8,17 +8,21 @@
 
 .container{
   label{
-  font-family: $navFont;
+  @include fontstyle;
   font-weight: normal;
-  letter-spacing: 2px;
   }
+  h3{
+    @include fontstyle;
+   }
   .form-control{
    border-radius: 0px;
   }
   .submit-button{
      background-color: $gold;
      color: #fff;
-     border-color: #b67c5a;
-     padding-top: 100px;
+     border-color: #gold;
+  }
+  .submit-button:hover{
+    background-color: $hover;
   }
 }

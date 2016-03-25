@@ -1,12 +1,14 @@
-@extends('layouts.app')
+@extends('master')
 
-<!-- Main Content -->
+@section('title', 'Reset Password')
+@section('meta-description','Enter your email address, we will send you an email to reset your password.')
+
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
                 <div class="panel-heading">Reset Password</div>
+                <p>We will send you an email to reset your password.</p>
                 <div class="panel-body">
                     @if (session('status'))
                         <div class="alert alert-success">
@@ -33,14 +35,12 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-btn fa-envelope"></i>Send Password Reset Link
+                                <input type="submit" class="form-control submit-button">
                                 </button>
                             </div>
                         </div>
                     </form>
                 </div>
-            </div>
         </div>
     </div>
 </div>
