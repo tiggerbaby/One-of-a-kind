@@ -4,6 +4,8 @@ $fontColor: black;
 $gold: #a4854d;
 $hover: #ceb98b;
 
+
+
 @mixin fontstyle{
   font-family: Helvetica Neue;
   letter-spacing: 2px;
@@ -46,15 +48,13 @@ $hover: #ceb98b;
 }
 
 
-
 @media (min-width: 768px) {
   .navbar-nav {
     position: relative;
-    right: -45%;
+    right: -15%;
     margin-left: 3%;
      li {
     position: relative;
-    left: -50%;
          a {
         line-height: 105px;
         vertical-align: middle;
@@ -65,13 +65,9 @@ $hover: #ceb98b;
     padding-left: 0;
     padding-right: 0;
   }
-   #backgroundImg{
-     min-width: calc(100% + 40px);
-}
-
+  
 @media (min-width: 992px) {
-  .navbar-nav > li a {
-  } 
+  
 }
 @media (min-width: 1200px) {
   .navbar-nav > li a {

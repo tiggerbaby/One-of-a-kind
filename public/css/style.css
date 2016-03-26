@@ -78,21 +78,17 @@
 @media (min-width: 768px) {
   .navbar-nav {
     position: relative;
-    right: -45%;
+    right: -15%;
     margin-left: 3%; }
     .navbar-nav li {
-      position: relative;
-      left: -50%; }
+      position: relative; }
       .navbar-nav li a {
         line-height: 105px;
         vertical-align: middle; }
 
   .navbar-collapse {
     padding-left: 0;
-    padding-right: 0; }
-
-  #backgroundImg {
-    min-width: calc(100% + 40px); } }
+    padding-right: 0; } }
 @media (min-width: 768px) and (min-width: 1200px) {
   .navbar-nav > li a {
     padding: 0 30px; } }
