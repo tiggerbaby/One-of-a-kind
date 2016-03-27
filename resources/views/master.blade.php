@@ -40,10 +40,7 @@
                 <li><a href="/shop">Shop</a></li>
                 <li><a href="/register">Register</a></li>
               <li><a href="/login">Login</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
-               
-
-
+              <li><a href="#"><span class="glyphicon glyphicon-shopping-cart" ></span>(0)</a></li>
             </ul>
     
         </div>

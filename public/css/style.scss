@@ -4,8 +4,6 @@ $fontColor: black;
 $gold: #a4854d;
 $hover: #ceb98b;
 
-
-
 @mixin fontstyle{
   font-family: Helvetica Neue;
   letter-spacing: 2px;
@@ -29,10 +27,21 @@ $hover: #ceb98b;
   transform: scale(1.08);
 }
 
+
+
 @import 'navBar';
 @import 'forms';
 
 
+.media-body, .media-left, .media-right{
+  width: 45%;
+    letter-spacing: 2px;
+    line-height: 250%;
+    font-family: courier;
+  img{
+    height: 300px;
+  }
+}
 
 #backgroundImg{
   @include courierFont;

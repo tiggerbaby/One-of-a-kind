@@ -9,6 +9,6 @@ use App\Http\Requests;
 class StoryController extends Controller
 {
     public function index(){
-    	return view('story.index');
+    	return view('story.story');
     }
 }

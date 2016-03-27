@@ -58,6 +58,14 @@
     background-color: #ceb98b;
     border-color: #ceb98b; }
 
+.media-body, .media-left, .media-right {
+  width: 45%;
+  letter-spacing: 2px;
+  line-height: 250%;
+  font-family: courier; }
+  .media-body img, .media-left img, .media-right img {
+    height: 300px; }
+
 #backgroundImg {
   font-family: Courier;
   letter-spacing: 1px;

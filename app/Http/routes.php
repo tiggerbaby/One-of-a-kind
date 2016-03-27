@@ -39,8 +39,7 @@ Route::post('register', 'Auth\AuthController@postRegister');
  
 
 Route::get('story','StoryController@index');
-
 Route::get('work','WorkController@index');
-Route::get('shop','ShopController@index');
 Route::get('contact','ContactController@index');
+Route::get('shop','ShopController@index');
 });
