@@ -62,9 +62,10 @@
   width: 45%;
   letter-spacing: 2px;
   line-height: 250%;
-  font-family: courier; }
+  font-family: courier;
+  padding: 30px 15px; }
   .media-body img, .media-left img, .media-right img {
-    height: 300px; }
+    width: 464px; }
 
 #backgroundImg {
   font-family: Courier;

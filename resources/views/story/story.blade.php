@@ -8,7 +8,7 @@
 <div class="media storyBox">
   <div class="media-left box1">
     <a href="#">
-      <img class="media-object" src="/img/combs.jpg" alt="This is a comb image">
+      <img class="media-object" src="/img/combs.jpg" alt="Comb image">
     </a>
   </div>
   <div class="media-body box2">
@@ -34,14 +34,14 @@
   </div>
   <div class="media-right box1">
     <a href="#">
-      <img class="media-object" src="/img/combs.jpg" alt="This is a comb image">
+      <img class="media-object" src="/img/rings.jpg" alt="Key ring image">
     </a>
   </div>
 </div>
 <div class="media storyBox">
   <div class="media-left box1">
     <a href="#">
-      <img class="media-object" src="/img/combs.jpg" alt="This is a comb image">
+      <img class="media-object" src="/img/sample4.jpg" alt="Coasters image">
     </a>
   </div>
   <div class="media-body box2">
