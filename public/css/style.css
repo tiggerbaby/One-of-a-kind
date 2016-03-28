@@ -58,6 +58,9 @@
     background-color: #ceb98b;
     border-color: #ceb98b; }
 
+#catalogueMenu .breadcrumb {
+  background-color: #ffffff; }
+
 .media-body, .media-left, .media-right {
   width: 45%;
   letter-spacing: 2px;

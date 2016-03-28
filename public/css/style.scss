@@ -32,6 +32,11 @@ $hover: #ceb98b;
 @import 'navBar';
 @import 'forms';
 
+#catalogueMenu{
+   .breadcrumb{
+    background-color: #ffffff;
+   }
+}
 
 .media-body, .media-left, .media-right{
   width: 45%;

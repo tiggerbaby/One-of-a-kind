@@ -50,6 +50,13 @@
    
    @yield('content')
 
+<footer>
+<div class="container">
+    <p>Copyright © 2016- One-of-a-Kind. All rights reserved.</p>
+    <p>Design by Alice Wu </p>
+</div>
+    
+</footer>
 
 
 
