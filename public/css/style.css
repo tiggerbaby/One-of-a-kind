@@ -93,6 +93,9 @@ footer {
     -webkit-transform: scale(1.08);
     transform: scale(1.08); }
 
+.dropdown > li > a {
+  line-height: 35px; }
+
 @media (min-width: 768px) {
   .navbar-nav {
     position: relative;
@@ -103,6 +106,8 @@ footer {
       .navbar-nav li a {
         line-height: 105px;
         vertical-align: middle; }
+    .navbar-nav ul > li > a {
+      line-height: 35px; }
 
   .navbar-collapse {
     padding-left: 0;

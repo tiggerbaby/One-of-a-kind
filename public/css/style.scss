@@ -68,6 +68,9 @@ footer{
   }
 }
 
+.dropdown>li>a {
+  line-height: 35px;
+}
 
 @media (min-width: 768px) {
   .navbar-nav {
@@ -81,6 +84,9 @@ footer{
         vertical-align: middle;
     } 
   } 
+  ul>li>a{
+    line-height: 35px;
+  }
 }
   .navbar-collapse{
     padding-left: 0;
