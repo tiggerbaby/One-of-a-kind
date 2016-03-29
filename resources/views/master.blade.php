@@ -48,7 +48,7 @@
                  <li><a href="/contact">Contact </a></li>
                 <li class="hidden-xs"><a href="/"><img src="/img/OOAKlogodraft.jpg" alt="One of A kind logo" class="logo upperlogo"></a></li>
                 <li class="dropdown">
-                <a href="/shop" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Shop<span class="caret">
+                <a href="/shop" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop<span class="caret">
                 </a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Catalogue1</a></li>
@@ -60,11 +60,11 @@
                 <li><a href="/register">Register</a></li>
               <li><a href="/login">Login</a></li>
               <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
                   <span class="glyphicon glyphicon-shopping-cart" ></span>(0)<span class="caret">
                   </a>
                   <ul class="dropdown-menu">
-                  <li><a href="#">Your shopping cart is empty.</a></li>
+                  <li><a href="#"><small>Your shopping cart is empty.</small></a></li>
                 </ul>
               </li>
             </ul>

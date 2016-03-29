@@ -68,9 +68,7 @@ footer{
   }
 }
 
-.dropdown>li>a {
-  line-height: 35px;
-}
+
 
 @media (min-width: 768px) {
   .navbar-nav {
@@ -87,11 +85,11 @@ footer{
   ul>li>a{
     line-height: 35px;
   }
+  .navbar ul.dropdown-menu, .navbar li.dropdown b.caret {
+        display: none;
+    }
 }
-  .navbar-collapse{
-    padding-left: 0;
-    padding-right: 0;
-  }
+
   
 @media (min-width: 992px) {
   

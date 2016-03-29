@@ -47,3 +47,8 @@
   background-color: $hover;
 }
 
+
+
+.dropdown:hover .dropdown-menu {
+   display: block;
+}
