@@ -1,7 +1,7 @@
 
 .logo{
-  height: 100px;
-  width: 100px;
+  height: 85px;
+  width: 85px;
 }
 .upperlogo{
   margin-top : -40px;
@@ -19,6 +19,8 @@
   margin-bottom: 0px;
   padding: 20px 0px;
 }
+
+
 .navbar-brand {
   padding: 0 15px;
   height: 126px; 
@@ -41,4 +43,7 @@
     border-bottom: 1px solid #eaeaeb;
   }
 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background-color: $hover;
+}
 

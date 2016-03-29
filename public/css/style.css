@@ -1,6 +1,6 @@
 .logo {
-  height: 100px;
-  width: 100px; }
+  height: 85px;
+  width: 85px; }
 
 .upperlogo {
   margin-top: -40px; }
@@ -35,6 +35,9 @@
 .navbar-collapse, .navbar-default .navbar-form {
   border-bottom: 1px solid #eaeaeb; }
 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #ceb98b; }
+
 .formwidth {
   max-width: 350px;
   margin-left: auto;
@@ -60,6 +63,9 @@
 
 #catalogueMenu .breadcrumb {
   background-color: #ffffff; }
+
+footer {
+  border-top: 1px solid #eaeaeb; }
 
 .media-body, .media-left, .media-right {
   width: 45%;

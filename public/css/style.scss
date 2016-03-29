@@ -32,10 +32,16 @@ $hover: #ceb98b;
 @import 'navBar';
 @import 'forms';
 
+
+
 #catalogueMenu{
    .breadcrumb{
     background-color: #ffffff;
    }
+}
+
+footer{
+   border-top: 1px solid #eaeaeb;
 }
 
 .media-body, .media-left, .media-right{

@@ -21,6 +21,7 @@
     <![endif]-->
     <body>
    <nav class="navbar navbar-default" style="padding-bottom: 0px">
+     
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -30,6 +31,15 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="/"><img src="/img/OOAKlogodraft.jpg" alt="One of A kind logo" class="logo"></a>
+      <!--    <div class="navbar-toggle" data-toggle="collapse" data-target="shopping-cart">
+         <a href="#" class="dropdown-toggle hidden-sm hidden-md hidden-lg" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-shopping-cart" ></span>(0)<span class="caret">
+                  </a>
+                  <ul class="dropdown-menu" id="shopping-cart">
+                  <li><a href="#">Your shopping cart is empty.</a></li>
+                 </ul>
+    </div>
+         -->
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -38,7 +48,7 @@
                  <li><a href="/contact">Contact </a></li>
                 <li class="hidden-xs"><a href="/"><img src="/img/OOAKlogodraft.jpg" alt="One of A kind logo" class="logo upperlogo"></a></li>
                 <li class="dropdown">
-                <a href="/shop" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Shop
+                <a href="/shop" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Shop<span class="caret">
                 </a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Catalogue1</a></li>
@@ -51,7 +61,7 @@
               <li><a href="/login">Login</a></li>
               <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                  <span class="glyphicon glyphicon-shopping-cart" ></span>(0)
+                  <span class="glyphicon glyphicon-shopping-cart" ></span>(0)<span class="caret">
                   </a>
                   <ul class="dropdown-menu">
                   <li><a href="#">Your shopping cart is empty.</a></li>
@@ -68,8 +78,38 @@
 
 <footer>
 <div class="container">
-    <p>Copyright © 2016- One-of-a-Kind. All rights reserved.</p>
-    <p>Design by Alice Wu </p>
+  <div class="row">
+   <h4>One-of-a-Kind</h4>
+    <p>Phone:</p>
+    <p>Email:</p>
+    <p>Address:</p>
+ <div class="row">
+    <div class="sm-6">
+         <img src="/img/OOAKlogodraft.jpg" alt="OOAK logo" class="logo">
+          <p>Copyright © 2016- One-of-a-Kind. All rights reserved</p>
+          <p>Design and Development by Alice Wu</p>
+    </div>
+     
+  <div class="sm-3">
+      <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/story">Story</a></li>
+          <li><a href="/work">Work</a></li>
+          <li><a href="/shop">Shop</a></li>
+          <li><a href="/contact">Contact</a></li>
+      </ul>
+  </div>
+  
+
+
+   <div class="sm-3"></div>
+    <p>Terms&Conditions</p>
+    <p>Privacy Policy</p>
+    <p>Phone:</p>
+      
+  </div>
+ </div>
+   
 </div>
     
 </footer>
