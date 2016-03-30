@@ -48,7 +48,7 @@
                  <li><a href="/contact">Contact </a></li>
                 <li class="hidden-xs"><a href="/"><img src="/img/OOAKlogodraft.jpg" alt="One of A kind logo" class="logo upperlogo"></a></li>
                 <li class="dropdown">
-                <a href="/shop" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop<span class="caret">
+                <a href="/shop">Shop<span class="caret">
                 </a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Catalogue1</a></li>
@@ -78,40 +78,38 @@
 
 <footer>
 <div class="container">
-  <div class="row">
-   <h4>One-of-a-Kind</h4>
-    <p>Phone:</p>
-    <p>Email:</p>
-    <p>Address:</p>
- <div class="row">
-    <div class="sm-6">
-         <img src="/img/OOAKlogodraft.jpg" alt="OOAK logo" class="logo">
-          <p>Copyright © 2016- One-of-a-Kind. All rights reserved</p>
-          <p>Design and Development by Alice Wu</p>
-    </div>
-     
-  <div class="sm-3">
-      <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/story">Story</a></li>
-          <li><a href="/work">Work</a></li>
-          <li><a href="/shop">Shop</a></li>
-          <li><a href="/contact">Contact</a></li>
-      </ul>
-  </div>
-  
-
-
-   <div class="sm-3"></div>
-    <p>Terms&Conditions</p>
-    <p>Privacy Policy</p>
-    <p>Phone:</p>
-      
-  </div>
- </div>
-   
+   <div class="row">
+      <div class="col-sm-6">
+         <div class="text-center">
+            <img src="/img/OOAKlogodraft.jpg" alt="OOAK logo" class="logo">
+         </div>
+         <p>One-of-a-Kind offers New Zealand  made unique and customisable objects.</p>
+         <p>Copyright © 2016 One-of-a-Kind. All rights reserved.</p>
+         <p>Design and Development by Alice Wu</p>
+      </div>
+      <div class="col-sm-3">
+         <h4>One-of-a-Kind</h4>
+         <p><span class="glyphicon glyphicon-home"></span>&nbspBoutique
+Level 1, 104 The Terrace
+Wellington, New Zealand</p>
+         <p><span class="glyphicon glyphicon-earphone"></span>&nbsp +64 &nbsp 276818188</p>
+         <p><span class="glyphicon glyphicon-envelope"></span>&nbsp ozosil@hotmail.com </p>
+         
+      </div>
+      <div class="col-sm-3">
+         <h4>Site Map</h4>
+         <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/story">Story</a></li>
+            <li><a href="/work">Work</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="#">Terms&Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+         </ul>
+      </div>
+   </div>
 </div>
-    
 </footer>
 
 
