@@ -17,9 +17,5 @@ Wellingtonn, New Zealand
  	</div>
  </div>
 </div>
-<div class="jumbotron text-center">
- 	<h1>Map</h1>
- 	<h1>Area</h1>
- 	<h1>!</h1>
- </div>
+<div class="jumbotron" id="map"> </div>
 @endsection
