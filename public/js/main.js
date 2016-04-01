@@ -52,4 +52,15 @@ $('#myAffix').affix({
   });
 }
 
+// Instagram API
+  $(document).ready(function () {
+ 
+  $('#selector').pongstgrm({
+    accessId:     '219634874',
+    accessToken:  '219634874.4efb854.6bf2f192c04f49cf90f114ced64e185e'
+  });
+  $('#selector').pongstgrm({ show: 'feed' });
+ 
+});
+
    

@@ -77,9 +77,13 @@
    @yield('content')
 
 <footer>
+<h1>Follow us on Instagram</h1>
+<div id="selector"></div>
 <div class="container">
+
    <div class="row">
       <div class="col-sm-6">
+
          <div class="text-center">
             <img src="/img/OOAKlogodraft.jpg" alt="OOAK logo" class="logo">
          </div>
@@ -120,6 +124,7 @@ Wellington, New Zealand</p>
     <script src="/js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGoKVYCpHSY6xiD4aNdvcGdFKLJGpQgx4&callback=initMap"
     async defer></script>
+    <script src="/js/pongstgrm/source/pongstagr.am.js"></script>
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
     <script src="/js/main.js"></script>
     </body>
