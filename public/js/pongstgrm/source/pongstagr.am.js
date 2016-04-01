@@ -22,7 +22,7 @@
 
     // DISPLAY OPTIONS
     // ===========================
-    , count:       4
+    , count:       8
     , likes:       true
     , comments:    true
     , timestamp:   true

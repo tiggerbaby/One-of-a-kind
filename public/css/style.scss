@@ -48,7 +48,9 @@ $hover: #ceb98b;
 body{
   margin: 0 20px;
 }
-
+.fade{
+  opacity: 1;
+}
 .media-body, .media-left, .media-right{
    @include courierFont;
      width: 45%;

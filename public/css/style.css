@@ -79,6 +79,9 @@ footer {
 body {
   margin: 0 20px; }
 
+.fade {
+  opacity: 1; }
+
 .media-body, .media-left, .media-right {
   font-family: Courier;
   letter-spacing: 1px;
