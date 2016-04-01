@@ -64,20 +64,32 @@
     background-color: #ceb98b;
     border-color: #ceb98b; }
 
+footer {
+  border-top: 1px solid #eaeaeb;
+  font: 13px Helvetica Neue;
+  letter-spacing: 0.04em; }
+
+#map {
+  height: 350px;
+  width: 100%; }
+
 #catalogueMenu .breadcrumb {
   background-color: #ffffff; }
 
-footer {
-  border-top: 1px solid #eaeaeb; }
+body {
+  margin: 0 20px; }
 
 .media-body, .media-left, .media-right {
+  font-family: Courier;
+  letter-spacing: 1px;
   width: 45%;
-  letter-spacing: 2px;
   line-height: 250%;
-  font-family: courier;
   padding: 30px 15px; }
   .media-body img, .media-left img, .media-right img {
     width: 464px; }
+
+.carousel-inner {
+  max-height: 600px; }
 
 #backgroundImg {
   font-family: Courier;
@@ -88,9 +100,9 @@ footer {
   transform-origin: 50% 50%;
   transition: transform 16s cubic-bezier(0.215, 0.61, 0.355, 1), filter 1s ease-out 1s, -webkit-filter 1s ease-out 1s;
   overflow: hidden;
-  background-image: url(../img/Brushes.png);
+  /*background-image: url(../img/Brushes.png);
   background-size: cover;
-  height: 550px;
+  height: 550px; */
   color: white; }
   #backgroundImg:hover {
     -webkit-transform: scale(1.08);
