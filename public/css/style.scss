@@ -51,6 +51,10 @@ body{
 .fade{
   opacity: 1;
 }
+.thumbnail{
+  border: none;
+}
+
 .media-body, .media-left, .media-right{
    @include courierFont;
      width: 45%;

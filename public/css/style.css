@@ -82,6 +82,9 @@ body {
 .fade {
   opacity: 1; }
 
+.thumbnail {
+  border: none; }
+
 .media-body, .media-left, .media-right {
   font-family: Courier;
   letter-spacing: 1px;

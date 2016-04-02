@@ -22,10 +22,10 @@
 
     // DISPLAY OPTIONS
     // ===========================
-    , count:       8
-    , likes:       true
-    , comments:    true
-    , timestamp:   true
+    , count:       12
+    , likes:       false
+    , comments:    false
+    , timestamp:   false
     , effects:    "scaling"
     , show:       "recent"
 
@@ -102,13 +102,13 @@
           options.data.type === 'video' ? 
             _thumbnail += '<span class="type"><i class="'+ options.dflt.videoicon +'"></i></span>': ""
 
-          options.data.likes !== false ?
-            _thumbnail += '<span class="likes"><i class="'+ options.dflt.likeicon +'"></i>&nbsp; '+ options.data.likes_count+'</span>': ""
+          // options.data.likes !== false ?
+          //   _thumbnail += '<span class="likes"><i class="'+ options.dflt.likeicon +'"></i>&nbsp; '+ options.data.likes_count+'</span>': ""
 
-          options.data.comments !== false ? 
-            _thumbnail += '<span class="comments"><i class="'+ options.dflt.commenticon +'"></i>&nbsp; '+ options.data.comments_count+'</span>': ""
-            _thumbnail += ' </div>'
-            _thumbnail += '</div>'
+          // options.data.comments !== false ? 
+          //   _thumbnail += '<span class="comments"><i class="'+ options.dflt.commenticon +'"></i>&nbsp; '+ options.data.comments_count+'</span>': ""
+          //   _thumbnail += ' </div>'
+          //   _thumbnail += '</div>'
 
         $(options.target).append(_thumbnail)
 

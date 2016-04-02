@@ -6,9 +6,15 @@
 @section('content')
 <div class="container">
     <div class="row">
+    <div class="text-center">
+   <h3>Reset Password</h3>
+   <br><br>
+   <p>We will send you an email to reset your password.</p>
+    </div> 
+
+
         <div class="col-md-8 col-md-offset-2">
-                <div class="panel-heading">Reset Password</div>
-                <p>We will send you an email to reset your password.</p>
+               
                 <div class="panel-body">
                     @if (session('status'))
                         <div class="alert alert-success">
@@ -38,8 +44,11 @@
                                 <input type="submit" class="form-control submit-button">
                                 </button>
                             </div>
+
                         </div>
+
                     </form>
+
                 </div>
         </div>
     </div>
