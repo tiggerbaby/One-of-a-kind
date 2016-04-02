@@ -6,5 +6,6 @@
 @section('content')
 <div class="container">
 <h1>Our Work</h1>
+<div id="selector"></div>
 </div>
 @endsection

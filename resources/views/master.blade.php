@@ -57,8 +57,12 @@
                   <li><a href="#">Catalogues4</a></li>
                 </ul>
                 </li>
-                <li><a href="/register">Register</a></li>
-              <li><a href="/login">Login</a></li>
+                 @if(\Auth::check())
+        <li><a href="/logout">Logout</a></li>
+      @else
+        <li><a href="/register">Register</a></li>
+        <li><a href="/login">LogIn</a></li>
+      @endif   
               <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
                   <span class="glyphicon glyphicon-shopping-cart" ></span>(0)<span class="caret">
@@ -77,13 +81,10 @@
    @yield('content')
 
 <footer>
-<h1>Follow us on Instagram</h1>
-<div id="selector"></div>
 <div class="container">
 
    <div class="row">
-      <div class="col-sm-6">
-
+      <div class="col-sm-6">   
          <div class="text-center">
             <img src="/img/OOAKlogodraft.jpg" alt="OOAK logo" class="logo">
          </div>
