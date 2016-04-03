@@ -76,6 +76,9 @@ footer {
 #catalogueMenu .breadcrumb {
   background-color: #ffffff; }
 
+.btn-link {
+  color: black; }
+
 body {
   margin: 0 20px; }
 
