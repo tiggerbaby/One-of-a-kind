@@ -47,26 +47,29 @@
 </div>
 
 <br><br>
-<div class="containe">
+<div class="containe frontPage">
 	<h1 class="text-center">What make us one of a kind?</h1>
   <div class="row">
   <div class="col-xs-4 col-sm-4 col-md-4">
     <!-- <img src="/img/unique.svg">  -->
-    
+    <object id="svg1" src="/img/unique.svg"></object>
   </div>
  
     <div class="col-xs-4 col-sm-4 col-md-4">  
-  <img src="/img/custome.svg">
+  <!-- <img src="/img/custome.svg"> -->
+  <object id="svg2" src="/img/custome.svg"></object>
   </div>
   <div class="col-xs-4 col-sm-4 col-md-4">  
-    <img src="/img/nz.svg">
+    <!-- <img src="/img/nz.svg"> -->
+    <object id="svg3" src="/img/nz.svg"></object>
    </div>
     <div class="col-xs-2 col-sm-2 col-md-2"> </div>
    <div class="col-xs-4 col-sm-4 col-md-4">  
-  <img src="/img/ideas.svg">
+  <!-- <img src="/img/ideas.svg"> -->
+  <object id="svg4" src="/img/ideas.svg"></object>
   </div>
     <div class="col-xs-4 col-sm-4 col-md-4">  
-  <img src="/img/friendly.svg">
+ <object id="svg5" src="/img/friendly.svg"></object>
    </div>
    <div class="col-xs-2 col-sm-2 col-md-2"> </div>
 
@@ -74,16 +77,16 @@
  
 </div>
 
-<div class="container workWrapper">
+<div class="container frontPage workWrapper">
 <div class="row">
-	<h1 class="text-center">Our Recently Work</h1>
+	<h1 class="text-center">Our Latest Work</h1>
   <br><br>
   <div id="selector"></div>
 </div>
     
 </div>
-
-<div class="jumbotron">
+ 
+<div class="jumbotron frontPage">
 	<h1>Contact Form</h1>
 </div>
  

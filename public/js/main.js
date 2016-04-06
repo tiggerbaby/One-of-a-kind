@@ -52,15 +52,174 @@ $('#myAffix').affix({
   });
 }
 
+
+
+
 // Instagram API
+
+var id = '219634874';
+var token = '219634874.4efb854.6bf2f192c04f49cf90f114ced64e185e';
+
   $(document).ready(function () {
  
   $('#selector').pongstgrm({
-    accessId:     '219634874',
-    accessToken:  '219634874.4efb854.6bf2f192c04f49cf90f114ced64e185e'
+    accessId:     id,
+    accessToken:  token,
+    count: '4',
   });
-  $('#selector').pongstgrm({ show: 'feed' });
+  $('#selector').pongstgrm({ show: 'lasercutting'});
  
 });
 
-   
+    $(document).ready(function () {
+ 
+  $('#recentWork').pongstgrm({
+    accessId:     id,
+    accessToken:  token,
+    count: '12',
+  });
+  $('#recentWork').pongstgrm({ show: 'lasercutting'});
+ 
+});
+
+
+// SVG
+
+function showSVG(idName){
+// Elements to inject
+  var svgInjector = document.querySelectorAll(idName);
+
+  // Do the injection
+  SVGInjector(svgInjector,{
+    each: function(svg){
+      var svgID = $(svg).attr('id');
+      var viv = new Vivus(svgID, 
+        {
+        type: 'async'
+        , duration: 100
+      });
+
+      $(svg).click(function(){
+        viv.reset().play();
+      });      
+    }
+  }); 
+}
+
+//  $(function(){
+$(document).ready(function () {    
+  
+  showSVG('#svg1');
+  showSVG('#svg2');
+  showSVG('#svg3');
+  showSVG('#svg4');
+  showSVG('#svg5');
+  });
+
+// var svgInjector = document.querySelectorAll('#svg2');
+
+//   // Do the injection
+//   SVGInjector(svgInjector,{
+//     each: function(svg){
+//       var svgID = $(svg).attr('id');
+//       var viv = new Vivus(svgID, 
+//         {
+//         type: 'async'
+//         , duration: 100
+//       });
+
+//       $(svg).click(function(){
+//         viv.reset().play();
+//       });      
+//     }
+//   }); 
+
+//   var svgInjector = document.querySelectorAll('#svg3');
+
+//   // Do the injection
+//   SVGInjector(svgInjector,{
+//     each: function(svg){
+//       var svgID = $(svg).attr('id');
+//       var viv = new Vivus(svgID, 
+//         {
+//         type: 'async'
+//         , duration: 100
+//       });
+
+//       $(svg).click(function(){
+//         viv.reset().play();
+//       });      
+//     }
+//   }); 
+
+// var svgInjector = document.querySelectorAll('#svg4');
+
+//   // Do the injection
+//   SVGInjector(svgInjector,{
+//     each: function(svg){
+//       var svgID = $(svg).attr('id');
+//       var viv = new Vivus(svgID, 
+//         {
+//         type: 'async'
+//         , duration: 100
+//       });
+
+//       $(svg).click(function(){
+//         viv.reset().play();
+//       });      
+//     }
+//   }); 
+
+// var svgInjector = document.querySelectorAll('#svg5');
+
+//   // Do the injection
+//   SVGInjector(svgInjector,{
+//     each: function(svg){
+//       var svgID = $(svg).attr('id');
+//       var viv = new Vivus(svgID, 
+//         {
+//         type: 'async'
+//         , duration: 100
+//       });
+
+//       $(svg).click(function(){
+//         viv.reset().play();
+//       });      
+//     }
+//   });   
+
+
+// });
+
+
+// function showSVG(tagId)
+// {
+//   var svgInjector = document.querySelectorAll(tagId);
+
+//   // Do the injection
+//   SVGInjector(svgInjector,{
+//     each: function(svg){
+//       var svgID = $(svg).attr('id');
+//       var viv = new Vivus(svgID, 
+//         {
+//         type: 'async'
+//         , duration: 100
+//       });
+
+//       $(svg).click(function(){
+//         viv.reset().play();
+//       });      
+//     }
+//   }); 
+// }
+
+// //  $(function(){
+// $(document).ready(function () {    
+  
+//   showSVG('#svg1');
+//   showSVG('#svg2');
+//   showSVG('#svg3');
+//   showSVG('#svg4');
+//   showSVG('#svg5');
+  
+  
