@@ -46,14 +46,41 @@
   </a>
 </div>
 
-<div class="jumbotron">
-	<h1 class="text-center">What<br> make us one of a kind?</h1>
+<br><br>
+<div class="containe">
+	<h1 class="text-center">What make us one of a kind?</h1>
+  <div class="row">
+  <div class="col-xs-4 col-sm-4 col-md-4">
+    <!-- <img src="/img/unique.svg">  -->
+    
+  </div>
+ 
+    <div class="col-xs-4 col-sm-4 col-md-4">  
+  <img src="/img/custome.svg">
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4">  
+    <img src="/img/nz.svg">
+   </div>
+    <div class="col-xs-2 col-sm-2 col-md-2"> </div>
+   <div class="col-xs-4 col-sm-4 col-md-4">  
+  <img src="/img/ideas.svg">
+  </div>
+    <div class="col-xs-4 col-sm-4 col-md-4">  
+  <img src="/img/friendly.svg">
+   </div>
+   <div class="col-xs-2 col-sm-2 col-md-2"> </div>
 
+  </div>
+ 
 </div>
 
-<div class="container">
-	<h1 class="text-center">Our Work</h1>
-
+<div class="container workWrapper">
+<div class="row">
+	<h1 class="text-center">Our Recently Work</h1>
+  <br><br>
+  <div id="selector"></div>
+</div>
+    
 </div>
 
 <div class="jumbotron">

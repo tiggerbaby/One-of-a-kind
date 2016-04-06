@@ -50,9 +50,9 @@
   Pongstgrm.prototype.template = {
     loadmore: function (options) {
       var _load  = '<div class="row">'
-          _load += '  <button class="'+ options.button +'" data-paginate="'+ options.show +'">'
-          _load +=      options.buttontext
-          _load += '  </button>'
+          // _load += '  <button class="'+ options.button +'" data-paginate="'+ options.show +'">'
+          // _load +=      options.buttontext
+          // _load += '  </button>'
           _load += '</div>'
 
       options.insert !== 'before' ? 
