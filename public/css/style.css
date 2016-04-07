@@ -1,3 +1,7 @@
+/*nav{
+ margin-bottom: 100px;
+}
+*/
 .logo {
   height: 85px;
   width: 85px; }
@@ -70,9 +74,13 @@ footer {
   letter-spacing: 0.04em;
   margin-top: 100px; }
 
-#map {
-  height: 350px;
-  width: 100%; }
+.frontPage h1 {
+  font-family: Courier;
+  letter-spacing: 1px; }
+
+.contactPage {
+  font-family: Helvetica Neue;
+  letter-spacing: 2px; }
 
 #catalogueMenu .breadcrumb {
   background-color: #ffffff; }
@@ -86,16 +94,16 @@ body {
 .fade {
   opacity: 1; }
 
-.thumbnail {
-  border: none; }
-
 .storyBox {
   font-family: Courier;
   letter-spacing: 1px;
   line-height: 250%;
   padding: 50px 50px; }
   .storyBox img {
-    width: 464px; }
+    width: 500px; }
+
+#map {
+  height: 350px; }
 
 .carousel-inner {
   max-height: 600px; }
@@ -114,8 +122,8 @@ body {
   height: 550px; */
   color: white; }
   #backgroundImg:hover {
-    -webkit-transform: scale(1.08);
-    transform: scale(1.08); }
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
 
 @media (min-width: 768px) {
   .navbar-nav {
@@ -130,14 +138,8 @@ body {
     .navbar-nav ul > li > a {
       line-height: 35px; }
     .navbar-nav .navbar ul.dropdown-menu, .navbar-nav .navbar li.dropdown b.caret {
-      display: none; }
-    .navbar-nav .storyBox > .col-sm-6 {
-      width: 100%; } }
-@media (min-width: 768px) and (min-width: 992px) {
-  .storyBox > .col-md-6 {
-    width: 50%;
-    left: 110px; } }
-@media (min-width: 768px) and (min-width: 1200px) {
+      display: none; } }
+@media (min-width: 1200px) {
   .navbar-nav > li a {
     padding: 0 30px; } }
 
