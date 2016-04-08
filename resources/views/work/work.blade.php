@@ -5,7 +5,11 @@
 
 @section('content')
 <div class="container">
+<div class="row">
 <h1>Our Work</h1>
-<div id="selector"></div>
+<div id="recentWork"></div>
+	
+
+</div>
 </div>
 @endsection

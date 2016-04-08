@@ -23,21 +23,30 @@ $hover: #ceb98b;
 }
 
 @mixin zomminHover{
- -webkit-transform: scale(1.08);
-  transform: scale(1.08);
+ -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-
-
 
 @import 'navBar';
 @import 'forms';
 @import 'footer';
 
+.contactForm{
+  
+  form{
+    width: 600px;
+  }
+}
 
-#map {
-        height: 350px;
-        width: 100%;
-      }
+.frontPage{
+  h1{
+    @include courierFont;
+  }
+}
+
+.contactPage{
+  @include fontstyle;
+}
 
 #catalogueMenu{
    .breadcrumb{
@@ -55,18 +64,19 @@ body{
 .fade{
   opacity: 1;
 }
-.thumbnail{
-  border: none;
+
+.storyBox{
+   @include courierFont;
+    line-height: 250%;
+    padding:50px 50px;
+
+  img{
+    width: 500px;
+  }
 }
 
-.media-body, .media-left, .media-right{
-   @include courierFont;
-     width: 45%;
-    line-height: 250%;
-    padding:30px 15px;
-  img{
-    width: 464px;
-  }
+#map{
+  height: 350px;
 }
 
 .carousel-inner {
@@ -85,7 +95,6 @@ body{
   @include zomminHover;
   }
 }
-
 
 
 @media (min-width: 768px) {
@@ -108,15 +117,18 @@ body{
     }
 }
 
+}
+
   
 @media (min-width: 992px) {
-  
+
 }
+
 @media (min-width: 1200px) {
   .navbar-nav > li a {
     padding: 0 30px;
   } 
 }  
-}
+
 
 

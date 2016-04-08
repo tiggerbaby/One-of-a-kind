@@ -74,6 +74,9 @@ footer {
   letter-spacing: 0.04em;
   margin-top: 100px; }
 
+.contactForm form {
+  width: 600px; }
+
 .frontPage h1 {
   font-family: Courier;
   letter-spacing: 1px; }

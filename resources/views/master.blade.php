@@ -12,6 +12,7 @@
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css"  rel="stylesheet">
     <link href="/css/style.css"  rel="stylesheet">
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,12 +58,21 @@
                   <li><a href="#">Catalogues4</a></li>
                 </ul>
                 </li>
-                 @if(\Auth::check())
-        <li><a href="/logout">Logout</a></li>
-      @else
-        <li><a href="/register">Register</a></li>
-        <li><a href="/login">LogIn</a></li>
-      @endif   
+                @if (Auth::guest())
+                        <li><a href="{{ url('/register') }}">Register</a></li>
+                        <li><a href="{{ url('/login') }}">Login</a></li>
+
+                    @else
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                            </ul>
+                        </li>
+                    @endif
               <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
                   <span class="glyphicon glyphicon-shopping-cart" ></span>(0)<span class="caret">
@@ -76,13 +86,13 @@
         </div>
     </div>
 </nav>
+<br><br>
 
    
    @yield('content')
 
 <footer>
 <div class="container">
-
    <div class="row">
       <div class="col-sm-6">   
          <div class="text-center">
@@ -121,12 +131,14 @@ Wellington, New Zealand</p>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script type="text/javascript" src="/js/jquery-2.2.3.js"></script> 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGoKVYCpHSY6xiD4aNdvcGdFKLJGpQgx4&region=GB"
-type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGoKVYCpHSY6xiD4aNdvcGdFKLJGpQgx4&callback=initMap"async defer></script>
     <script src="/js/pongstgrm/source/pongstagr.am.js"></script>
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="/js/vivus.min.js"></script>
+    <script type="text/javascript" src="/js/svg-injector.js"></script>
     <script src="/js/main.js"></script>
     </body>
 </html>
