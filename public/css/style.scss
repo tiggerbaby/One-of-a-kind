@@ -32,7 +32,7 @@ $hover: #ceb98b;
 @import 'footer';
 
 .contactForm{
-  
+
   form{
     width: 600px;
   }
@@ -100,13 +100,13 @@ body{
 @media (min-width: 768px) {
   .navbar-nav {
     position: relative;
-    right: -15%;
+    right: -5%;
     margin-left: 3%;
      li {
     position: relative;
          a {
         line-height: 105px;
-        vertical-align: middle;
+        /*vertical-align: middle;*/
     } 
   } 
   ul>li>a{

@@ -23,7 +23,7 @@
     <body>
    <nav class="navbar navbar-default" style="padding-bottom: 0px">
      
-    <div class="container-fluid">
+    <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -135,6 +135,7 @@ Wellington, New Zealand</p>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGoKVYCpHSY6xiD4aNdvcGdFKLJGpQgx4&callback=initMap"async defer></script>
+    <script src="/js/instafeed.min.js"></script>
     <script src="/js/pongstgrm/source/pongstagr.am.js"></script>
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
     <script type="text/javascript" src="/js/vivus.min.js"></script>

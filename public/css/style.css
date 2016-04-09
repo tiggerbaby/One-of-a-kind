@@ -131,13 +131,13 @@ body {
 @media (min-width: 768px) {
   .navbar-nav {
     position: relative;
-    right: -15%;
+    right: -5%;
     margin-left: 3%; }
     .navbar-nav li {
       position: relative; }
       .navbar-nav li a {
         line-height: 105px;
-        vertical-align: middle; }
+        /*vertical-align: middle;*/ }
     .navbar-nav ul > li > a {
       line-height: 35px; }
     .navbar-nav .navbar ul.dropdown-menu, .navbar-nav .navbar li.dropdown b.caret {
