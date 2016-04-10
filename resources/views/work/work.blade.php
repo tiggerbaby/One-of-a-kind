@@ -7,6 +7,7 @@
 <div class="container">
 <div class="row">
 <h1>Our Work</h1>
+  <div id="profile"></div>
 <div id="recentWork"></div>
 	
 

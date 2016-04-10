@@ -70,6 +70,18 @@ var token = '219634874.4efb854.6bf2f192c04f49cf90f114ced64e185e';
   $('#selector').pongstgrm({ show: 'lasercutting'});
  
 });
+ 
+  $(document).ready(function (){
+  $('#profile').pongstgrm({
+  accessId:     id,
+    accessToken:  token,
+  show:             'profile',
+  picture_size:     '64',                  // sets profile picture to 64x64 pixels, no need to add px
+  profile_bg_img:   '/img/combs.jpg', // image url
+  profile_bg_color: '#d9534f',             // background color
+});
+
+});  
 
     $(document).ready(function () {
  
@@ -115,6 +127,11 @@ $(document).ready(function () {
   showSVG('#svg4');
   showSVG('#svg5');
   });
+
+
+
+
+
 
 // var svgInjector = document.querySelectorAll('#svg2');
 
