@@ -11,6 +11,7 @@
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css"  rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/js/clock_assets/flipclock.css" />
     <link href="/css/style.css"  rel="stylesheet">
     
 
@@ -73,6 +74,9 @@
                             </ul>
                         </li>
                     @endif
+
+
+
               <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
                   <span class="glyphicon glyphicon-shopping-cart" ></span>(0)<span class="caret">
@@ -95,9 +99,9 @@
 <div class="container">
    <div class="row">
       <div class="col-sm-6">   
-         <div class="text-center">
+         <!-- <div class="text-center">
             <img src="/img/OOAKlogodraft.jpg" alt="OOAK logo" class="logo">
-         </div>
+         </div> -->
          <p>One-of-a-Kind offers New Zealand  made unique and customisable objects.</p>
          <p>Copyright © 2016 One-of-a-Kind. All rights reserved.</p>
          <p>Design and Development by Alice Wu</p>
@@ -134,6 +138,7 @@ Wellington, New Zealand</p>
      <script type="text/javascript" src="/js/jquery-2.2.3.js"></script> 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/clock_assets/flipclock.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGoKVYCpHSY6xiD4aNdvcGdFKLJGpQgx4&callback=initMap"async defer></script>
     <script src="/js/instafeed.min.js"></script>
     <script src="/js/pongstgrm/source/pongstagr.am.js"></script>

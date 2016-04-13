@@ -74,6 +74,10 @@ footer {
   letter-spacing: 0.04em;
   margin-top: 100px; }
 
+.divider {
+  height: 330px;
+  border-right: 1px solid #e6e6e6; }
+
 .contactForm form {
   width: 600px; }
 
@@ -109,7 +113,7 @@ body {
   height: 350px; }
 
 .carousel-inner {
-  max-height: 600px; }
+  max-height: 650px; }
 
 #backgroundImg {
   font-family: Courier;
@@ -128,6 +132,16 @@ body {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
 
+body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn {
+  color: #CCCCCC;
+  background-color: #a4854d; }
+
+body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot {
+  background: #323434; }
+
+body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a {
+  color: #323434; }
+
 @media (min-width: 768px) {
   .navbar-nav {
     position: relative;
@@ -142,6 +156,12 @@ body {
       line-height: 35px; }
     .navbar-nav .navbar ul.dropdown-menu, .navbar-nav .navbar li.dropdown b.caret {
       display: none; } }
+@media (max-width: 768px) {
+  .clock-builder-output .flip-clock-wrapper {
+    margin: 0 auto;
+    display: block;
+    width: 322px;
+    height: 116px; } }
 @media (min-width: 1200px) {
   .navbar-nav > li a {
     padding: 0 30px; } }

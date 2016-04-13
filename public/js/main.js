@@ -1,10 +1,10 @@
-// var fooReveal = {
-//  duration    : 1000,
-// delay       : 200,
-// };
+var fooReveal = {
+ duration    : 1000,
+delay       : 200,
+};
 
-// window.sr = ScrollReveal();
-// sr.reveal('.foo', fooReveal);
+window.sr = ScrollReveal();
+sr.reveal('.foo', fooReveal);
 
 $('#myAffix').affix({
   offset: {
@@ -128,7 +128,18 @@ $(document).ready(function () {
   showSVG('#svg5');
   });
 
-
+// Countdown Timer
+$(function(){
+  FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+  var opts = {
+    clockFace: 'DailyCounter',
+    countdown: true,
+    language: 'Custom'
+  };  
+  var countdown = 1472703660 - ((new Date().getTime())/1000); // from: 09/01/2016 04:21 pm +1200
+  countdown = Math.max(1, countdown);
+  $('.clock-builder-output').FlipClock(countdown, opts);
+});
 
 
 
