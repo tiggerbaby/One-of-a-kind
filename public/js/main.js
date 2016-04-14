@@ -129,17 +129,30 @@ $(document).ready(function () {
   });
 
 // Countdown Timer
-$(function(){
+$(document).ready(function(){
   FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
   var opts = {
     clockFace: 'DailyCounter',
     countdown: true,
     language: 'Custom'
   };  
-  var countdown = 1472703660 - ((new Date().getTime())/1000); // from: 09/01/2016 04:21 pm +1200
+  var countdown = 1469325240 - ((new Date().getTime())/1000); // from: 07/24/2016 01:54 pm +1200
   countdown = Math.max(1, countdown);
   $('.clock-builder-output').FlipClock(countdown, opts);
 });
+
+
+  $(window).resize(function(){
+   console.log('resize called');
+   var width = $(window).width();
+   if(width <= 768){
+       $('.clock-builder-output').addClass('flip-clock-small-wrapper');
+   }
+   // else{
+   //     $('#myelement').removeClass('width6').addClass('width8');
+   // }
+})
+.resize();//trigge
 
 
 

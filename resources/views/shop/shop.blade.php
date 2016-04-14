@@ -67,8 +67,8 @@
    <div class="row">
       <h1>Coming Soon!</h1> 
       <br><br>
-   <div class="col-sm-7 col-md-7 col-lg-8">
-    <div class="clock-builder-output"></div>
+   <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
+    <div class="clock-builder-output" id="clock"></div>
 
     </div> 
 
