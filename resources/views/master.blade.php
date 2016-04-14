@@ -12,6 +12,7 @@
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css"  rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="/js/clock_assets/flipclock.css" />
+    <link rel="stylesheet" type="text/css" href="/js/pongstgrm/source/pongstagr.am.css">
     <link href="/css/style.css"  rel="stylesheet">
     
 
@@ -50,14 +51,14 @@
                  <li><a href="/contact">Contact </a></li>
                 <li class="hidden-xs"><a href="/"><img src="/img/OOAKlogodraft.jpg" alt="One of A kind logo" class="logo upperlogo"></a></li>
                 <li class="dropdown">
-                <a href="/shop">Shop<span class="caret">
+                <a href="/shop">Shop<!-- <span class="caret"></span> -->
                 </a>
-                <ul class="dropdown-menu">
+                <!-- <ul class="dropdown-menu">
                   <li><a href="#">Catalogue1</a></li>
                   <li><a href="#">Catalogues2</a></li>
                   <li><a href="#">Catalogues3</a></li>
                   <li><a href="#">Catalogues4</a></li>
-                </ul>
+                </ul> -->
                 </li>
                 @if (Auth::guest())
                         <li><a href="{{ url('/register') }}">Register</a></li>
