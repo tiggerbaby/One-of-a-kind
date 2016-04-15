@@ -20,6 +20,7 @@ class ContactController extends Controller
         'name' => 'required|max:50',
         'email' => 'required|max:100',
         'subject'=>'max:100',
+        'image' => 'image',
         'message'=>'required|max:350',
     ]);  
          $contact = new contact();

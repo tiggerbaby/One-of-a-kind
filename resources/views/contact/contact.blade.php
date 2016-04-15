@@ -59,36 +59,36 @@ Wellington, New Zealand</address>
            <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
              <label for="exampleInputEmail1">Email address</label>
              <input type="email" class="form-control" name="email" value="{{ old('email') }}">
-              @if ($errors->has('name'))
+              @if ($errors->has('email'))
                     <span class="help-block">
-                    <strong>{{ $errors->first('name') }}</strong>
+                    <strong>{{ $errors->first('email') }}</strong>
                     </span>
                @endif     
            </div>
             <div class="form-group{{ $errors->has('subject') ? ' has-error' : '' }}">
              <label for="subject">Subject</label>
              <input type="text" class="form-control" name="subject" value="{{ old('subject') }}">
-              @if ($errors->has('name'))
+              @if ($errors->has('subject'))
                     <span class="help-block">
-                    <strong>{{ $errors->first('name') }}</strong>
+                    <strong>{{ $errors->first('subject') }}</strong>
                     </span>
                @endif     
            </div>
            <div class="form-group{{ $errors->has('image') ? ' has-error' : '' }}">
             <label for="file"> Image</label>
               <input type="file" class="form-control" name="image" value="{{ old('image') }}">
-               @if ($errors->has('name'))
+               @if ($errors->has('image'))
                     <span class="help-block">
-                    <strong>{{ $errors->first('name') }}</strong>
+                    <strong>{{ $errors->first('image') }}</strong>
                     </span>
                @endif     
             </div>
             <div class="form-group{{ $errors->has('message') ? ' has-error' : '' }}">
              <label for="Message">Message</label>
              <textarea row="8" class="form-control" name="message" value="{{ old('message') }}"></textarea> 
-              @if ($errors->has('name'))
+              @if ($errors->has('message'))
                     <span class="help-block">
-                    <strong>{{ $errors->first('name') }}</strong>
+                    <strong>{{ $errors->first('message') }}</strong>
                     </span>
                @endif     
            </div>
