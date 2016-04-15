@@ -32,16 +32,21 @@ Route::group(['middleware' => 'web'], function () {
 // Authentication routes...
 Route::get('login', 'Auth\AuthController@getLogin');
 Route::post('login', 'Auth\AuthController@postLogin');
+
+
 //Route::get('logout', 'Auth\AuthController@getLogout');
 Route::get('auth/logout', 'Auth\AuthController@logout'); 
 
 // Registration routes...
 Route::get('register', 'Auth\AuthController@getRegister');
 Route::post('register', 'Auth\AuthController@postRegister');
- 
+
+// Route::get('adminpanel','Auth\AuthController@index'); 
+
 
 Route::get('story','StoryController@index');
 Route::get('work','WorkController@index');
 Route::get('contact','ContactController@index');
+Route::post('contact','ContactController@store');
 Route::get('shop','ShopController@index');
 });
