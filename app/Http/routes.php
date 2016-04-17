@@ -43,10 +43,10 @@ Route::post('register', 'Auth\AuthController@postRegister');
 
 // Route::get('adminpanel','Auth\AuthController@index'); 
 
-
 Route::get('story','StoryController@index');
 Route::get('work','WorkController@index');
 Route::get('contact','ContactController@index');
 Route::post('contact','ContactController@store');
 Route::get('shop','ShopController@index');
+Route::get('add','ShopController@add');
 });
