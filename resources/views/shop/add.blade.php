@@ -4,8 +4,6 @@
 @section('meta-description','Add Object')
 
 @section('content')
- @if(\Auth::check())
-    @if(\Auth::user()->role === 'admin')
 <div class="container">
 	<div class="container frontPage">
   <div class="row">
@@ -13,14 +11,14 @@
        <div class="panel-body">
           <h1 class="text-center">Add Object</h1>
           <p class="text-center"></p>
-          <form role="form" method="POST" action="{{ url('/edit') }}">
+          <form role="form" method="POST" enctype="multipart/form-data" action="{{ url('/shop/add') }}">
            {!! csrf_field() !!}
-           <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-             <label for="name">Object Name</label>
-             <input type="text" class="form-control" name="name" value="{{ old('name') }}">
-              @if ($errors->has('name'))
+           <div class="form-group{{ $errors->has('object_name') ? ' has-error' : '' }}">
+             <label for="object_name">Object Name</label>
+             <input type="text" class="form-control" name="object_name" value="{{ old('object_name') }}">
+              @if ($errors->has('object_name'))
                     <span class="help-block">
-                    <strong>{{ $errors->first('name') }}</strong>
+                    <strong>{{ $errors->first('object_name') }}</strong>
                     </span>
                @endif       
            </div>
@@ -43,15 +41,15 @@
                @endif     
            </div> -->
            <div class="form-group{{ $errors->has('image') ? ' has-error' : '' }}">
-            <label for="file"> Image</label>
-              <input type="file" class="form-control" name="image" value="{{ old('image') }}">
+            <label for="image"> Image</label>
+              <input type="file" class="form-control" name="image"  value="{{ old('image') }}">
                @if ($errors->has('image'))
                     <span class="help-block">
                     <strong>{{ $errors->first('image') }}</strong>
                     </span>
                @endif     
             </div>
-            <div class="form-group{{ $errors->has('message') ? ' has-error' : '' }}">
+            <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
              <label for="description">Description</label>
              <textarea row="10" class="form-control" name="description" value="{{ old('description') }}"></textarea> 
               @if ($errors->has('description'))
@@ -61,7 +59,7 @@
                @endif     
            </div>
  
-  <button type="submit" class="btn btn-default">Add</button>
+  <button type="submit" class="btn btn-default">Add Object</button>
 </form>
        </div>
      </div>
@@ -73,6 +71,6 @@
 </div>
  
           </div>  
-          @endif()
-   @endif()
+
+   
 @endsection          

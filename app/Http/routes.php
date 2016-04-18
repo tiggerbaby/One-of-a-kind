@@ -48,5 +48,6 @@ Route::get('work','WorkController@index');
 Route::get('contact','ContactController@index');
 Route::post('contact','ContactController@store');
 Route::get('shop','ShopController@index');
-Route::get('add','ShopController@add');
+Route::get('shop/add','ShopController@add');
+Route::post('shop/add','ShopController@store');
 });
