@@ -16,11 +16,7 @@ class ShopController extends Controller
     	return view('shop.shop');
     }
     public function add(){
-
-    	if( ! (\Auth::check() && \Auth::user()->role === 'admin') ) {
-    		return('Error 401
-Unauthorised Access! You must have the right privileges to view this page.');
-    	};
+        mustbeAdmin();
     	return view('shop.add');
     }
 
@@ -39,11 +35,11 @@ Unauthorised Access! You must have the right privileges to view this page.');
          $product->price = $request->price;
          $product->description=$request->description;
          $product->image = $request->image;
-         
-
+        
         
          $product->save();
          return view('shop.shop');
+
     }
 
 }
