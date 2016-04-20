@@ -49,5 +49,6 @@ Route::get('contact','ContactController@index');
 Route::post('contact','ContactController@store');
 Route::get('shop','ShopController@index');
 Route::get('shop/add','ShopController@add');
-Route::post('shop/add','ShopController@store');
+Route::post('shop','ShopController@store');
+// Route::get('shop/view/{product->','ShopController@view');
 });

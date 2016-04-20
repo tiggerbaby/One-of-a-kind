@@ -74,6 +74,11 @@ footer {
   letter-spacing: 0.04em;
   margin-top: 100px; }
 
+.thumbnail {
+  border: 0px; }
+  .thumbnail .caption {
+    text-align: center; }
+
 .divider {
   height: 330px;
   border-right: 1px solid #e6e6e6; }

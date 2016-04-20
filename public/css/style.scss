@@ -31,7 +31,12 @@ $hover: #ceb98b;
 @import 'forms';
 @import 'footer';
 
-
+.thumbnail {
+  border: 0px;
+  .caption{
+    text-align: center;
+  }
+}
 
 .divider{
   height: 330px;
