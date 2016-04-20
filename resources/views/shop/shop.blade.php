@@ -7,7 +7,7 @@
 <div class="container">
  @if(\Auth::check())
     @if(\Auth::user()->role === 'admin')
-    <button type="submit" class="btn btn-default">Edit Object</button>
+    <button type="submit" class="btn btn-default"><a href="/shop/add"><span class="glyphicon glyphicon-plus"></span>Add Object</a></button>
  <div id="catalogueMenu">
   <ol class="breadcrumb">
     <li><a href="#">Catalogue1</a></li>
@@ -17,43 +17,21 @@
   </ol>
 </div>
  
-<div class="row">
+
+  @foreach($allProducts as $product)
   <div class="col-sm-4 col-md-4">
     <div class="thumbnail">
-      <img src="img/sample1.jpg" alt="Sample image">
+      <img src="/productImg/thumb/{{ $product->image }}" alt="Sample image">
+
+
       <div class="caption">
-        <h3>Sample 1</h3>
-        <p>$45</p>
+        <h4>{{$product->object_name}}</h4>
+        <p>${{$product->price}}</p>
       </div>
     </div>
   </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="img/sample2.jpg" alt="Sample image">
-      <div class="caption">
-        <h3>Sample 1</h3>
-        <p>$45</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="img/sample3.jpg" alt="Sample image">
-      <div class="caption">
-        <h3>Sample 1</h3>
-        <p>$45</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="img/sample4.jpg" alt="Sample image">
-      <div class="caption">
-        <h3>Sample 1</h3>
-        <p>$45</p>
-      </div>
-    </div>
-  </div>
+  @endforeach
+ 
 </div>
 
 </div> 
