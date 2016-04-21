@@ -74,6 +74,19 @@ footer {
   letter-spacing: 0.04em;
   margin-top: 100px; }
 
+#objectPage .row {
+  letter-spacing: 1px;
+  line-height: 2em; }
+#objectPage .add-button {
+  line-height: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #E4E4E4; }
+#objectPage .add-button:hover {
+  background-color: #a4854d; }
+
 .thumbnail {
   border: 0px; }
   .thumbnail .caption {

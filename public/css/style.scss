@@ -31,6 +31,25 @@ $hover: #ceb98b;
 @import 'forms';
 @import 'footer';
 
+
+#objectPage{
+  .row{
+    letter-spacing: 1px;
+    line-height: 2em;
+  } 
+  .add-button{
+    line-height: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #000000;
+    color:#ffffff;
+    border:1px solid #E4E4E4;
+  }
+  .add-button:hover{
+    background-color: $gold;
+  }
+}
+
 .thumbnail {
   border: 0px;
   .caption{
