@@ -18,7 +18,7 @@ class ShopController extends Controller
     }
     public function add(){
         mustbeAdmin();
-    	return view('shop.add');
+          	return view('shop.add');
     }
 
 
@@ -37,8 +37,8 @@ class ShopController extends Controller
          $product->object_name = $request->object_name;
          $product->price = $request->price;
          $product->description=$request->description;
-         $product->image = $request->image;
-        
+          $product->image = $request->file('image');
+        // $product->image = $request->image;
         
          //Create Instance of Image Intervention
         $manager = new ImageManager();
@@ -65,12 +65,15 @@ class ShopController extends Controller
          return view('shop.shop',compact('allProducts'));
 
     }
+
+   public function view($id){
      
-     // public function view(){
+        $singleProduct = Product::where('id', "=", $id)->firstOrFail();
 
-     //    mustbeAdmin();
-     //    return view ('shop.view');
-     // }
+        $productInfo = $singleProduct->all();
 
+        // var_dump($productInfo);
+        return view('shop.view', compact('singleProduct'));
+   }
 
 }
