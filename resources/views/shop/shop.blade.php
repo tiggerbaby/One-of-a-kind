@@ -21,11 +21,12 @@
   @foreach($allProducts as $product)
   <div class="col-sm-4 col-md-4">
     <div class="thumbnail">
-     <img src="/productImg/thumb/{{ $product->image }}" alt="Sample image">
-
+    <div>
+    <a href="/shop/view/{{$product->id}}"><img src="/productImg/thumb/{{ $product->image }}" alt="{{$product->object_name}} image"></a>
+    </div>
 
       <div class="caption">
-        <h4><a href="/shop/view/{{$product->id}}">{{$product->object_name}}</a></h4>
+        <h4>{{$product->object_name}}</h4>
         <p>${{$product->price}}</p>
       </div>
     </div>
