@@ -26,8 +26,8 @@
     </div>
 
       <div class="caption">
-        <h4>{{$product->object_name}}</h4>
-        <p>${{$product->price}}</p>
+        <h4><a href="/shop/view/{{$product->id}}">{{$product->object_name}}</a></h4>
+        <p> <a href="/shop/view/{{$product->id}}">${{$product->price}}</a></p>
       </div>
     </div>
   </div>
