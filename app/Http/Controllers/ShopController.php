@@ -67,7 +67,8 @@ class ShopController extends Controller
     }
 
    public function view($id){
-     
+        mustbeAdmin();
+
         $singleProduct = Product::where('id', "=", $id)->firstOrFail();
 
         $productInfo = $singleProduct->all();
@@ -76,4 +77,18 @@ class ShopController extends Controller
         return view('shop.view', compact('singleProduct'));
    }
 
+
+   public function deleteObject($id){
+
+     mustbeAdmin();
+
+     $object = Product::findOrFail($id);
+     $object->delete();
+
+        return redirect('shop');
+   }    
+
+    
 }
+
+
