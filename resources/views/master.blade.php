@@ -99,16 +99,18 @@
 <footer>
 <div class="container">
    <div class="row">
-      <div class="col-sm-6">   
+      <div class="col-sm-4">   
          <!-- <div class="text-center">
             <img src="/img/OOAKlogodraft.jpg" alt="OOAK logo" class="logo">
          </div> -->
+
+         <h4>One-of-a-Kind</h4>
          <p>One-of-a-Kind offers New Zealand  made unique and customisable objects.</p>
          <p>Copyright © 2016 One-of-a-Kind. All rights reserved.</p>
          <p>Design and Development by Alice Wu</p>
       </div>
-      <div class="col-sm-3">
-         <h4>One-of-a-Kind</h4>
+      <div class="col-sm-4">
+         <h4>Contact</h4>
          <p><span class="glyphicon glyphicon-home"></span>&nbspBoutique
 Level 1, 104 The Terrace
 Wellington, New Zealand</p>
@@ -116,9 +118,9 @@ Wellington, New Zealand</p>
          <p><span class="glyphicon glyphicon-envelope"></span>&nbsp ozosil@hotmail.com </p>
          
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-4">
          <h4>Site Map</h4>
-         <ul>
+         <ul class="footer-links">
             <li><a href="/">Home</a></li>
             <li><a href="/story">Story</a></li>
             <li><a href="/work">Work</a></li>
