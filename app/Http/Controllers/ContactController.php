@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Contact;
+use Intervention\Image\ImageManager;
 
 class ContactController extends Controller
 {
@@ -31,7 +32,7 @@ class ContactController extends Controller
          $contact->message= $request->message;
      
          $contact->save();
-         return view('contact.contact');
+         return view('contact.success');
     }
 }
 
