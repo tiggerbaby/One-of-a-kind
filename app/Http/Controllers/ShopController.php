@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\Http\Requests\CreatObjectRequest;
+
+use App\Http\Requests\EditImageRequest;
+
 use App\Product;
 
 use Intervention\Image\ImageManager;
@@ -22,23 +26,15 @@ class ShopController extends Controller
     }
 
 
-     public function store(Request $request)
+     public function store(CreatObjectRequest $request)
     {
-        // Validate and store the blog post...
-         $this->validate($request, [
-        'object_name' => 'required|max:50',
-        'price' => 'required|Numeric|',
-        'description'=>'required|max:1000',
-        'image' => 'required|image',
-        ]);  
-         
+    
          $product = new Product();
 
          $product->object_name = $request->object_name;
          $product->price = $request->price;
          $product->description=$request->description;
           $product->image = $request->file('image');
-        // $product->image = $request->image;
         
          //Create Instance of Image Intervention
         $manager = new ImageManager();
@@ -98,7 +94,7 @@ class ShopController extends Controller
       return view('shop.edit',compact('editProduct'));
    }
 
-   public function update($id, Request $request){
+   public function update($id, EditImageRequest $request){
          mustbeAdmin();
         $product = Product::where('id', '=', $id)->findOrFail($id);
          $this->validate($request, [
@@ -112,7 +108,7 @@ class ShopController extends Controller
          $product->object_name = $request->object_name;
          $product->price = $request->price;
          $product->description=$request->description;
-        //  $product->image = $request->file('image'); 
+         $product->image = $request->file('image'); 
 
          
         //  $manager = new ImageManager();
