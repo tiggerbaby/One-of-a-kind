@@ -88,7 +88,60 @@ class ShopController extends Controller
         return redirect('shop');
    }    
 
-    
+    public function edit($id){
+         
+         mustbeAdmin();
+         $editProduct = Product::findOrFail($id);
+
+        $productInfo = $editProduct->all();
+        
+      return view('shop.edit',compact('editProduct'));
+   }
+
+   public function update($id, Request $request){
+         mustbeAdmin();
+        $product = Product::where('id', '=', $id)->findOrFail($id);
+         $this->validate($request, [
+        'object_name' => 'required|max:50',
+        'price' => 'required|Numeric|',
+        'description'=>'required|max:1000',
+        // 'image'=>'image',
+        ]);  
+          
+
+         $product->object_name = $request->object_name;
+         $product->price = $request->price;
+         $product->description=$request->description;
+        //  $product->image = $request->file('image'); 
+
+         
+        //  $manager = new ImageManager();
+        // $thumb = $manager->make($request->image);
+        
+        // $thumb->fit(400, null, function ($constraint) {
+        //     $constraint->aspectRatio();
+        // });
+        
+
+         
+        // $product->save();
+
+
+        // $imageFilename = 'productImg/thumb/' . $product->id . '.jpg';
+        // $thumb->save($imageFilename, 60);
+
+        // $product->image = $product->id . '.jpg';
+
+        
+         $product->save();
+
+         $allProducts = $product->all();
+        // $productInfo = $editProduct->all();
+
+        // $productInfo->update();
+      
+     return redirect('shop');
+   }
 }
 
 
