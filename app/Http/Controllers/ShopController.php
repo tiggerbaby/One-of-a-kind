@@ -28,7 +28,7 @@ class ShopController extends Controller
 
      public function store(CreatObjectRequest $request)
     {
-    
+         mustbeAdmin();
          $product = new Product();
 
          $product->object_name = $request->object_name;
@@ -80,7 +80,7 @@ class ShopController extends Controller
 
      $object = Product::findOrFail($id);
      $object->delete();
-
+     
         return redirect('shop');
    }    
 
@@ -95,48 +95,38 @@ class ShopController extends Controller
    }
 
    public function update($id, EditImageRequest $request){
-         mustbeAdmin();
+        mustbeAdmin();
         $product = Product::where('id', '=', $id)->findOrFail($id);
-         $this->validate($request, [
-        'object_name' => 'required|max:50',
-        'price' => 'required|Numeric|',
-        'description'=>'required|max:1000',
-        // 'image'=>'image',
-        ]);  
-          
+        $product->object_name = $request->object_name;
+        $product->price = $request->price;
+        $product->description=$request->description;
 
-         $product->object_name = $request->object_name;
-         $product->price = $request->price;
-         $product->description=$request->description;
-         $product->image = $request->file('image'); 
+         //When you dont want to change the image
+         if(!isset($_FILES['image']) || $_FILES['image']['error'] == UPLOAD_ERR_NO_FILE) {
+    
+         } else {
+            //When you do change the image
+            $manager = new ImageManager();
+            $thumb = $manager->make($request->image);
+            
+            $thumb->fit(400, null, function ($constraint) {
+                $constraint->aspectRatio();
+            });
+            $imageFilename = 'productImg/thumb/' . $product->id . '.jpg';
+            $thumb->save($imageFilename, 60);
+         }
 
-         
-        //  $manager = new ImageManager();
-        // $thumb = $manager->make($request->image);
+
         
-        // $thumb->fit(400, null, function ($constraint) {
-        //     $constraint->aspectRatio();
-        // });
-        
 
-         
-        // $product->save();
-
-
+        // if(! empty($_FILES['image'])){
         // $imageFilename = 'productImg/thumb/' . $product->id . '.jpg';
         // $thumb->save($imageFilename, 60);
-
         // $product->image = $product->id . '.jpg';
+        //  } ;
 
-        
-         $product->save();
-
-         $allProducts = $product->all();
-        // $productInfo = $editProduct->all();
-
-        // $productInfo->update();
-      
-     return redirect('shop');
+           $product->save();
+           return redirect('shop');
    }
 }
 

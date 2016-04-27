@@ -47,21 +47,19 @@
            </div> -->
            <div class="form-group{{ $errors->has('image') ? ' has-error' : '' }}">
             <label for="image"> Image</label>
-              <input type="file" class="form-control" name="image"  value="{{ $editProduct->image }}">
-              <br>
-             <div class="editImg">
-               <div>
-                        <p>Original Picture</p>
-                      </div>
-             <img src="/productImg/thumb/{{$editProduct->image}}" alt="{{$editProduct->object_name}} image">
-
-          </div>
-   
+              <input type="file" class="form-control" name="image" value="{{ $editProduct->image }}">
                @if ($errors->has('image'))
                     <span class="help-block">
                     <strong>{{ $errors->first('image') }}</strong>
                     </span>
-               @endif     
+               @endif   
+              <br>
+             <div class="editImg">
+               <div>
+                      <p>Original Picture</p>
+                      </div>
+             <img src="/productImg/thumb/{{$editProduct->image}}" alt="{{$editProduct->object_name}} image">
+          </div> 
             </div>
             <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
              <label for="description">Description</label>
