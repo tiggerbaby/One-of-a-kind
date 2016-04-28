@@ -79,7 +79,13 @@ class ShopController extends Controller
      mustbeAdmin();
 
      $object = Product::findOrFail($id);
+     $imagePath = $object->image_path.'productImg/thumb/';
+
+     unlink('productImg/thumb/'.$object->id.'.jpg');;
+
+           
      $object->delete();
+     // $imageFilename->destroy();
      
         return redirect('shop');
    }    
