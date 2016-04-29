@@ -46,42 +46,24 @@ $('#myAffix').affix({
       var infowindow = new google.maps.InfoWindow({
     content: contentString
   });
-
       marker.addListener('click', function() {
     infowindow.open(map, marker);
   });
 }
 
 
-
-
 // Instagram API
 
-var id = '219634874';
-var token = '219634874.4efb854.6bf2f192c04f49cf90f114ced64e185e';
-
-  $(document).ready(function () {
+$(document).ready(function () {
  
   $('#selector').pongstgrm({
     accessId:     id,
     accessToken:  token,
     count: '4',
   });
-  $('#selector').pongstgrm({ show: 'lasercutting'});
+  $('#selector').pongstgrm({ show: 'resent'});
  
 });
- 
-  $(document).ready(function (){
-  $('#profile').pongstgrm({
-  accessId:     id,
-    accessToken:  token,
-  show:             'profile',
-  picture_size:     '64',                  // sets profile picture to 64x64 pixels, no need to add px
-  profile_bg_img:   '/img/combs.jpg', // image url
-  profile_bg_color: '#d9534f',             // background color
-});
-
-});  
 
     $(document).ready(function () {
  
@@ -94,6 +76,8 @@ var token = '219634874.4efb854.6bf2f192c04f49cf90f114ced64e185e';
  
 });
 
+
+ 
 
 // SVG
 
@@ -153,6 +137,7 @@ $(document).ready(function(){
    // }
 })
 .resize();//trigge
+
 
 
 
