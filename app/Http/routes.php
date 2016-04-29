@@ -51,5 +51,9 @@ Route::get('shop','ShopController@index');
 Route::get('shop/add','ShopController@add');
 Route::post('shop','ShopController@store');
 Route::get('/shop/view/{id}','ShopController@view');
+Route::get('/shop/view/{id}/edit','ShopController@edit');
+// Route::post('/shop/view/{id}/update','ShopController@update');
 Route::get('/shop/view/{id}/delete_confirm','ShopController@deleteObject');
+
+Route::post('/shop/view/{id}/update' ,'ShopController@update');
 });
