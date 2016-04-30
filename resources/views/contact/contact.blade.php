@@ -4,11 +4,12 @@
 @section('meta-description','Contact Us')
 
 @section('content')
+  <div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div id="map"></div>
+  </div>
+</div>
 
-
-
-    
-<div id="map"></div>
 
 <br><br>
 
@@ -38,14 +39,13 @@ Wellington, New Zealand</address>
       </div>
 <hr>
 
-<div class="container">
-	<div class="container frontPage">
+	<div class="container">
   <div class="row">
      <div class="col-md-6 col-md-offset-3">
        <div class="panel-body">
           <h1 class="text-center">Contact Form</h1>
           <p class="text-center">What's on your mind? Tell us about your idea. Or say hi :) </p>
-          <form role="form" method="POST" action="{{ url('/contact') }}">
+          <form role="form" method="POST" enctype="multipart/form-data" action="{{ url('/contact') }}">
            {!! csrf_field() !!}
            <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
              <label for="name">Your Name</label>
@@ -97,13 +97,11 @@ Wellington, New Zealand</address>
 </form>
        </div>
      </div>
-    
 
-   
   </div>
    
 </div>
- 
-          </div>      
+     
 </div>
+
 @endsection

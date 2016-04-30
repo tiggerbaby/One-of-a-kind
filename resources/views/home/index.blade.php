@@ -7,7 +7,7 @@
 @section('content')
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <div class="text-center" id="title">
-   <h1> One of a Kind New Zealand</h1>
+   <h1 class="foo"> One of a Kind New Zealand</h1>
    <p> made unique and customisable objects  </p>
    <a href="story"><input type="button" value="Know Us More"></input></a>
    <!-- <h1>New Zealand</h1> -->
@@ -93,7 +93,7 @@
   <div class="row">
      <div class="col-md-6 col-md-offset-3">
        <div class="panel-body">
-          <h1 class="text-center">Contact Form</h1>
+          <h1 class="text-center foo">Contact Form</h1>
           <p class="text-center">What's on your mind? Tell us about your idea. Or say hi :) </p>
           <form role="form" method="POST" enctype="multipart/form-data" action="{{ url('/contact') }}">
            {!! csrf_field() !!}
@@ -157,7 +157,6 @@
  <script type="text/javascript">
  var id = '{{ env('INSTAGRAM_ID') }}';
  var token = '{{ env('INSTAGRAM_TOKEN') }}';
-
 </script>
  
 

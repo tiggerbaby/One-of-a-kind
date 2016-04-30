@@ -78,14 +78,14 @@
 
 
 
-              <li class="dropdown">
+            <!--   <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
                   <span class="glyphicon glyphicon-shopping-cart" ></span>(0)<span class="caret">
                   </a>
                   <ul class="dropdown-menu">
                   <li><a href="#"><small>Your shopping cart is empty.</small></a></li>
                 </ul>
-              </li>
+              </li> -->
             </ul>
     
         </div>
@@ -107,7 +107,7 @@
          <h4>One-of-a-Kind</h4>
          <p>One-of-a-Kind offers New Zealand  made unique and customisable objects.</p>
          <p>Copyright © 2016 One-of-a-Kind. All rights reserved.</p>
-         <p>Design and Development by Alice Wu</p>
+         <p>Design and Development by Alice Wu.</p>
       </div>
       <div class="col-sm-4">
          <h4>Contact</h4>
@@ -142,8 +142,8 @@ Wellington, New Zealand</p>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/clock_assets/flipclock.js"></script>
+    <!-- <script type="text/javascript" src="/js/flipclock.min.js"></script> -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGoKVYCpHSY6xiD4aNdvcGdFKLJGpQgx4&callback=initMap"async defer></script>
-    <script src="/js/instafeed.min.js"></script>
     <script src="/js/pongstgrm/source/pongstagr.am.js"></script>
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
     <script type="text/javascript" src="/js/vivus.min.js"></script>
