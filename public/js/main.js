@@ -1,3 +1,31 @@
+// Countdown Timer
+$(document).ready(function(){
+ FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+  var opts = {
+    clockFace: 'DailyCounter',
+    countdown: true,
+    language: 'Custom'
+  };  
+  var countdown = 1470042360 - ((new Date().getTime())/1000); // from: 08/01/2016 09:06 pm +1200
+  countdown = Math.max(1, countdown);
+  $('.clock-builder-output').FlipClock(countdown, opts);
+  $('.clock-builder-output').FlipClock(countdown, opts);
+});
+
+
+  $(window).resize(function(){
+   // console.log('resize called');
+   var width = $(window).width();
+   if(width <= 768){
+       $('.clock-builder-output').addClass('flip-clock-small-wrapper');
+   }
+   // else{
+   //     $('#myelement').removeClass('width6').addClass('width8');
+   // }
+})
+.resize();//trigge
+
+
 var fooReveal = {
  duration    : 1000,
 delay       : 200,
@@ -62,11 +90,7 @@ $(document).ready(function () {
     count: '4',
   });
   $('#selector').pongstgrm({ show: 'resent'});
- 
-});
 
-    $(document).ready(function () {
- 
   $('#recentWork').pongstgrm({
     accessId:     id,
     accessToken:  token,
@@ -75,6 +99,10 @@ $(document).ready(function () {
   $('#recentWork').pongstgrm({ show: 'lasercutting'});
  
 });
+ 
+
+ 
+  
 
 
  
@@ -112,22 +140,24 @@ $(document).ready(function () {
   showSVG('#svg5');
   });
 
+
 // Countdown Timer
 $(document).ready(function(){
-  FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+ FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
   var opts = {
     clockFace: 'DailyCounter',
     countdown: true,
     language: 'Custom'
   };  
-  var countdown = 1469325240 - ((new Date().getTime())/1000); // from: 07/24/2016 01:54 pm +1200
+  var countdown = 1470042360 - ((new Date().getTime())/1000); // from: 08/01/2016 09:06 pm +1200
   countdown = Math.max(1, countdown);
+  $('.clock-builder-output').FlipClock(countdown, opts);
   $('.clock-builder-output').FlipClock(countdown, opts);
 });
 
 
   $(window).resize(function(){
-   console.log('resize called');
+   // console.log('resize called');
    var width = $(window).width();
    if(width <= 768){
        $('.clock-builder-output').addClass('flip-clock-small-wrapper');
@@ -137,8 +167,6 @@ $(document).ready(function(){
    // }
 })
 .resize();//trigge
-
-
 
 
 
