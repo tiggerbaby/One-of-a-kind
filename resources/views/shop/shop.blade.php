@@ -39,6 +39,8 @@
 
 </div> 
 
+{!! $allProducts->links() !!}
+
 @endif()
    @endif()
  </div>
@@ -47,11 +49,15 @@
 
     <div class="container">
    <div class="row">
-      <h1 class="foo">Coming Soon!</h1> 
+   <div class="col-md-8 col-md-offset-2 text-center">
+    <h1 class="foo">Coming Soon!</h1> 
       <br><br>
-   <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
+   <!-- <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8"> -->
     <div class="clock-builder-output" id="clock"></div>
     </div> 
+
+   <!-- </div> -->
+      
 
    @endif()
 

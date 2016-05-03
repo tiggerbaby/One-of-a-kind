@@ -6,8 +6,10 @@
 @section('content')
 <div class="container">
 <div class="row">
+<div class="col-md-8 col-md-offset-2 text-center">
 <h1 class="foo">Our Work</h1>
 <p>Our latest work form Instagram.</p>
+</div>
 <!--   <div id="profile"></div> -->
 <div id="recentWork"></div>
 	

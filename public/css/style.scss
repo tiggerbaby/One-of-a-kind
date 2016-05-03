@@ -31,6 +31,52 @@ $hover: #ceb98b;
 @import 'forms';
 @import 'footer';
 
+html, body {
+        height: 100%;
+        margin: 0;
+      }
+.fullScreen{
+  min-height: 100%; 
+}
+
+
+h1{
+  @include courierFont;
+}
+
+a{
+    color: black;
+  }
+a:hover{
+  color:$gold;
+}
+
+.btn:hover{
+  color:$gold;
+}
+
+.footer-links{
+      padding-left: 0;
+    margin-bottom: 20px;
+}
+ul{
+   list-style: none;
+ }
+
+
+.modal-body{
+  line-height: 50px;
+p{
+  margin-left: 2%;
+
+}
+
+  } 
+.editImg Img{
+  width: 120px;
+  height:100px;
+}
+
 
 #objectPage{
   .row{
@@ -50,6 +96,7 @@ $hover: #ceb98b;
   }
 }
 
+
 .thumbnail {
   border: 0px;
   .caption{
@@ -62,7 +109,6 @@ $hover: #ceb98b;
   border-right: 1px solid #e6e6e6;
 }
 
-
 .contactForm{
 
   form{
@@ -74,6 +120,13 @@ $hover: #ceb98b;
   h1{
     @include courierFont;
   }
+
+.submit-button{
+    line-height: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
 }
 
 .contactPage{
@@ -111,9 +164,11 @@ body{
   height: 350px;
 }
 
-.carousel-inner {
-    max-height: 650px;
+.carousel-inner {    
+  /*max-height: 650px;*/
+  max-height:85vh;
     }
+
 
 #backgroundImg{
   @include courierFont;
@@ -129,8 +184,36 @@ body{
 }
 
 
-body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #a4854d; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #323434; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #323434; }
+#title{
+  position: absolute;
+  font-family: Courier;
+  z-index: 1;
+  top:20%;
+  left: 20%;
+  right: 20%;
+  color: #ffffff;
+  h1{
+    font-size: 50px;
+  }
+  p{
+    font-size: 18px;
+    margin-bottom: 10%;
+  }
+  input{
+    margin-top: 5%;
+    color: #ffffff;
+    padding: 1% 8%;
+    background: none;
+    border: 2px solid #ffffff;
+ }
+   input:hover{
+    border-style: dotted;
+ }
+}
 
+/*body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #a4854d; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #323434; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #323434; }*/
+
+body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #a4854d; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #323434; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #323434; }
 
 @media (min-width: 768px) {
   .navbar-nav {
@@ -154,6 +237,7 @@ body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul 
 
 }
 
+
 @media(max-width:768px){
   .clock-builder-output .flip-clock-wrapper{
         margin: 0 auto;
@@ -161,6 +245,25 @@ body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul 
     width: 322px;
     height: 116px;
   }
+  #title{
+  top: 0%;    
+  left: 5%;
+  right: 5%;
+  h1{
+    font-size: 20px;
+  }
+  p{
+    font-size: 13px;
+    /*margin-bottom: 5%;*/
+  }
+  input{
+    /*margin-top: 5%;*/
+    color: #ffffff;
+    padding: 1% 8%;
+    background: none;
+    border: 2px solid #ffffff;
+ }
+}
 }
   
 @media (min-width: 992px) {
@@ -171,7 +274,8 @@ body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul 
   .navbar-nav > li a {
     padding: 0 30px;
   } 
-}  
+ } 
+
 
 
 
