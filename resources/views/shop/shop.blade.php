@@ -39,7 +39,6 @@
 
 </div> 
 
-{!! $allProducts->links() !!}
 
 @endif()
    @endif()
