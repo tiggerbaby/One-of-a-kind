@@ -27,7 +27,7 @@
       <p>The company director Szilard Ozorak has achieved a Masters in Design with a major in Digital Media and minor in Industrial Design.</p>
     </div>
     <div class="col-md-5 col-md-pull-6">
-        <img src="/img/rings.jpg" alt="Key ring image" class="img-responsive center-block">
+        <img src="/img/harcourt.jpg" alt="Key ring image" class="img-responsive center-block">
     </div>
   </div>
   </div>

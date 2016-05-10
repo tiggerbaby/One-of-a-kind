@@ -10,6 +10,8 @@
  <div class="row">
     <a href="/shop/add"><button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Add Object</button></a>
   </div>
+@endif()
+   @endif()
  <!-- <div id="catalogueMenu">
   <ol class="breadcrumb">
     <li><a href="#">Catalogue1</a></li>
@@ -40,25 +42,24 @@
 </div> 
 
 
-@endif()
-   @endif()
+
  </div>
  
-    @if( ! (\Auth::check() && \Auth::user()->role === 'admin') )
+    <!-- @if( ! (\Auth::check() && \Auth::user()->role === 'admin') ) -->
 
-    <div class="container">
+    <!-- <div class="container">
    <div class="row">
    <div class="col-md-8 col-md-offset-2 text-center">
     <h1 class="foo">Coming Soon!</h1> 
-      <br><br>
-   <!-- <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8"> -->
-    <div class="clock-builder-output" id="clock"></div>
-    </div> 
+      <br><br> -->
+  
+    <!-- <div class="clock-builder-output" id="clock"></div>
+    </div>  -->
 
    <!-- </div> -->
       
 
-   @endif()
+   <!-- @endif() -->
 
    </div> 
    </div>

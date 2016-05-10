@@ -7,8 +7,10 @@
 <div class="container">
 @if(\Auth::check())
     @if(\Auth::user()->role === 'admin')
-    <button type="submit" class="btn btn-default"><a href="/shop/view/{{$singleProduct->id}}/edit"><span class="glyphicon glyphicon-pencil"></span>Edit Object</a></button>
+    <button type="submit" class="btn btn-default" value="{!! csrf_token() !!}"><a href="/shop/view/{{$singleProduct->id}}/edit"><span class="glyphicon glyphicon-pencil"></span>Edit Object</a></button>
      <button type="submit" class="btn btn-default" data-toggle="modal" data-target="#exampleModal"><span class="glyphicon glyphicon-trash"></span>Delete Object</button>
+ @endif()
+ @endif()     
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -27,8 +29,7 @@
   </div>
 </div>
     
-    @endif()
-   @endif()
+
 </div>
 <br>
 <div class="container" id="objectPage">
@@ -42,7 +43,7 @@
 			<p>${{$singleProduct->price}}</p>
         </div>
         <div id="btn">
-        	<input type="button" value="Add to Cart" class="add-button"></input>
+        	<a href="/shop/cart"><input type="button" value="Add to Cart" class="add-button"></input></a>
         </div>
         <div id="description">
 			<h4>Description:</h4>
