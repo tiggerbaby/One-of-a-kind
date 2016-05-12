@@ -4,6 +4,11 @@
 @section('meta-description','One of a Kind Online Shop')
 
 @section('content')
+<div class="row">
+<div class="col-md-8 col-md-offset-2 text-center">
+<h1 class="foo">Shop</h1>
+</div>
+</div>
 <div class="container">
  @if(\Auth::check())
     @if(\Auth::user()->role === 'admin')

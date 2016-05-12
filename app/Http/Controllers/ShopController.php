@@ -121,9 +121,7 @@ class ShopController extends Controller
                 $constraint->aspectRatio();
             });
             $imageFilename = 'productImg/thumb/' . $product->id . '.jpg';
-            $thumb->save($imageFilename, 60);
-
-            
+            $thumb->save($imageFilename, 60);        
          }
 
 

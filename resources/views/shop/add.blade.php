@@ -11,7 +11,7 @@
        <div class="panel-body">
           <h1 class="text-center">Add Object</h1>
           <p class="text-center"></p>
-          <form role="form" method="POST" enctype="multipart/form-data" action="{{ url('/shop') }}">
+          <form role="form" method="POST" enctype="multipart/form-data" action="{{ url('/store') }}">
            {!! csrf_field() !!}
            <div class="form-group{{ $errors->has('object_name') ? ' has-error' : '' }}">
              <label for="object_name">Object Name</label>

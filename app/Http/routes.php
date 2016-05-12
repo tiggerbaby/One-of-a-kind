@@ -49,11 +49,15 @@ Route::get('contact','ContactController@index');
 Route::post('contact','ContactController@store');
 Route::get('shop','ShopController@index');
 Route::get('shop/add','ShopController@add');
-Route::post('shop','ShopController@store');
+Route::post('store','ShopController@store');
 Route::get('/shop/view/{id}','ShopController@view');
 Route::get('/shop/view/{id}/edit','ShopController@edit');
 // Route::post('/shop/view/{id}/update','ShopController@update');
 Route::get('/shop/view/{id}/delete_confirm','ShopController@deleteObject');
 Route::post('/shop/view/{id}/update' ,'ShopController@update');
 Route::get('/shop/cart','ShopController@shoppingCart');
+});
+
+Route::get('clearcache', function() {
+	Artisan::call('config:cache');
 });
